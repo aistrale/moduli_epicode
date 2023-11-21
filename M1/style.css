@@ -1,0 +1,93 @@
+body {
+    font-family: Cambria, serif;
+}
+
+a {
+    color: #127878;
+}
+
+/* li giustifico in verticale e in orizzontale */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.subtitle {
+    background-color: #fdfbf1;
+    width: 100%;
+    text-align: center;
+    color: #107777;
+    border-top: 1px solid #fee8af;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    width: 50%;
+}
+
+.container h1 {
+    text-align: center;
+    color: #333333;
+    padding: 0px 40px 0px 40px;
+}
+
+.container img {
+    height: 600px;
+    width: 100%; /* larghezza full, ovvero tutto il riquadro */
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+figure {
+    padding: 0px;
+    margin: 0px;
+}
+
+figcaption {
+    text-align: center;
+    color: #9e9e9e;
+    margin-top: 10px;
+}
+
+.link-container {
+    border-left: 1px solid #fee8af;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.link-container h4 {
+    color: #b5460f;
+    margin-bottom: 0px;
+}
+
+.second-container {
+    width: 50%;
+}
+
+.ingredients, .method {
+    border-bottom: 3px solid #eefbfb;
+}
+
+.recipe {
+    padding-left: 40px; /* perché ho scelto padding e non margin e perché second container? */
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
