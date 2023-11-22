@@ -34,7 +34,7 @@ main {
     align-items: center;
     width: 100%;
 }
-
+/* questo elemento *contiene* la parte del testo, che è al 50% del main */
 .container {
     width: 50%;
 }
@@ -46,12 +46,13 @@ main {
 }
 
 .container img {
-    height: 600px;
+    max-height: 600px;
     width: 100%; /* larghezza full, ovvero tutto il riquadro */
-    object-fit: cover;
+    object-fit: cover;  /* usare una "porzione" dell'immagine */
     border-radius: 15px;
 }
 
+/* il tag figure ha dei margini arbitrari; se mi serve dovrò quindi settarli a 0, come in questo caso */
 figure {
     padding: 0px;
     margin: 0px;
@@ -74,16 +75,8 @@ figcaption {
     margin-bottom: 0px;
 }
 
-.second-container {
-    width: 50%;
-}
-
 .ingredients, .method {
     border-bottom: 3px solid #eefbfb;
-}
-
-.recipe {
-    padding-left: 40px; /* perché ho scelto padding e non margin e perché second container? */
 }
 
 ul {
