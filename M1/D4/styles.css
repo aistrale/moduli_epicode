@@ -1,0 +1,97 @@
+:root {
+    --logo-bg: #222F3E;
+    --nav-bg:#354758;
+    --header-bg: #f56600;
+    --link-color: #017185;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: var(--logo-bg);
+}
+
+.logo {
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.logo-img {
+    width: 150px;
+}
+
+.sub-navbar {
+    background-color: var(--nav-bg);
+    color: white;
+}
+
+.navbar-links  {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0 40px 0 40px;
+    padding: 6px;
+}
+
+.spacing {
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.banner-holiday h3 {
+    background-color: var(--header-bg);
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-weight: 200;
+    text-align: center;
+}
+
+.christmas-gifts{
+    width: 100%;
+    margin-top: 20px;
+    min-height: 200px;
+    object-fit: cover;
+}
+
+.image-container {
+    background-image: url(./assets/bg-image.png);
+    background-repeat: repeat;
+    background-size: contain;
+    margin-top: 20px;
+    min-height: 150px;
+}
+
+.header-text h2,
+.header-text h5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+}
+
+.perfect-gifts {
+    padding: 20px;
+}
+
+.gifts-ideas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+}
+
+.product-image {
+    width: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    min-height: 50px;
+}
