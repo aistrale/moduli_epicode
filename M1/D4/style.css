@@ -117,27 +117,17 @@ body {
     box-shadow: 10px 10px 10px rgba(171, 169, 169, 0.974);
 }
 
-.visor img {
+.second-section img {
     width: 100%;
+    max-height: 500px;
+    object-fit: cover;
 }
 
-.visor-text {
+.second-section-text {
     text-align: center;
 }
 
-.visor-text span {
-    color: var(--link-color);
-}
-
-.audio img {
-    width: 100%;
-}
-
-.audio-text {
-    text-align: center;
-}
-
-.audio-text span {
+.second-section span {
     color: var(--link-color);
 }
 
