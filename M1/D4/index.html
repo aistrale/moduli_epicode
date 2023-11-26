@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Amazon</title>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo-img">
+        <div class="nav-logo">
             <img src="./assets/logo.png" alt="logo amazon">
         </div>
-        <div class="sub-navbar">
+        <!-- shortcut: ul>li*6 e poi TAB -->
+        <div class="nav-menu">
             <ul class="navbar-links">
                 <li>All</li>
                 <li>Today's deals</li>
-                <li>Customer deals</li>
+                <li>Customer Service</li>
                 <li>Registry</li>
                 <li>Gift Card</li>
                 <li>Sell</li>
@@ -23,41 +24,147 @@
         </div>
     </nav>
 
-    <header class="spacing">
-        <div class="banner-holiday">
-            <h3>Shop All Holiday Gifts Cards</h3>
+    <header class="spacing banner">
+        <div>
+            <h4>Shop All Holiday Gifts Cards</h4>
         </div>
-        <div class="image-container">
-            <div class="header-text"><h2>Holiday Gift Guides</h2><h5>Be a go-gifter</h5></div>
+        <div class="banner-logoContainer">
+            <div class="banner-text"><h2>Holiday Gift Guides</h2><h5>Be a go-gifter</h5></div>
         </div>
     </header>
 
     <main>
-        <section>
-            <div class="perfect-gift spacing">Find the perfect gift <span>Shop Now</span></div>
-            <div class="gifts-ideas">
+        <!-- la sezione 1 ha un padding -->
+        <section class="gift-ideas spacing">
+            <div class="gift-ideas-text">Find the perfect gift <span><strong>Shop Now</strong></span></div>
+            <div class="gift-ideas-container">
                 <div>
                     <img class="product-image" src="./assets/img_1.jpg">
                 </div>
-                <div><img class="product-image" src="./assets/img_1.jpg"></div>
-                <div><img class="product-image" src="./assets/img_1.jpg"></div>
-                <div><img class="product-image" src="./assets/img_1.jpg"></div>
+                <div><img class="product-image" src="./assets/img_2.jpg"></div>
+                <div><img class="product-image" src="./assets/img_3.jpg"></div>
+                <div><img class="product-image" src="./assets/img_4.jpg"></div>
             </div>
-
         </section>
 
-        <section class="endSection spacing">
+        <section class="visor spacing">
             <div>
                 <img src="./assets/img_9.png" alt="visore">
             </div>
-            <div></div>
+            <div class="visor-text">Play the gifting game <span><strong>Shop gaming</strong></span></div>
         </section>
 
-        <section class="endSection spacing">
-            <img src="./assets/img_10.png" alt="visore">
+        <section class="audio spacing">
+            <div>
+                <img src="./assets/img_10.png" alt="cuffie">
+            </div>
+            <div class="audio-text">The sound of cheer <span><strong>Shop Audio & Accessories</strong></span></div>
+        </section>
+
+        <section class="extra spacing">
+            <div class="other-ideas spacing">
+                <div class="other-ideas-container">
+                    <div><h3>Gaming accessories</h3></div>
+                    <div class="other-ideas-container-img">
+                        <figure>
+                            <img src="./assets/img_15.jpg">
+                            <figcaption>Headsets</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/img_16.jpg">
+                            <figcaption>Keyboards</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/img_17.jpg">
+                            <figcaption>Computer mice</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/img_18.jpg">
+                            <figcaption>Chairs</figcaption>
+                        </figure>
+                    </div>
+                    <div class="extra-text spacing">See more</div>
+                </div>
+
+                <div class="other-ideas-container">
+                    <div><h3>Comfy styles</h3></div>
+                    <div class="other-ideas-container-img">
+                        <figure>
+                            <img src="./assets/img_19.jpg">
+                            <figcaption>Sweatshirts</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/img_20.jpg">
+                            <figcaption>Joggers</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/img_21.jpg">
+                            <figcaption>Cardigans</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/img_22.jpg">
+                            <figcaption>Easy tees</figcaption>
+                        </figure>
+                    </div>
+                    <div class="extra-text spacing">See more</div>
+                </div>
+
+                <div class="other-ideas-container">
+                    <div><h3>Holiday Gifts</h3></div>
+                    <div class="other-ideas-container-img">
+                        <figure>
+                            <img src="./assets/img_11.jpg">
+                            <figcaption>Electronics</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/img_12.jpg">
+                            <figcaption>Fashion</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/img_13.jpg">
+                            <figcaption>Toys</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/img_14.jpg">
+                            <figcaption>Beauty</figcaption>
+                        </figure>
+                    </div>
+                    <div class="extra-text spacing">Shop all gifts guides</div>
+                </div>
+
+                <div class="other-ideas-container">
+                    <div><h3>Add joy to their wish list</h3></div>
+                    <div class="other-ideas-container-img">
+                        <figure>
+                            <img src="./assets/img_24.jpg">
+                            <figcaption>Holiday toy list</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/img_25.jpg">
+                            <figcaption>Electronic Gifts</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/img_26.jpg">
+                            <figcaption>Home Gifts</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./assets/img_27.jpg">
+                            <figcaption>Fashion Gifts</figcaption>
+                        </figure>
+                    </div>
+                    <div class="extra-text spacing">Shop all gifts guides</div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer-link spacing">
+            <a href="#">Back to top</a>
+        </div>
+        <div class="footer-logo">
+            <img src="./assets/logo.png">
+        </div>
+    </footer>
 </body>
 </html>

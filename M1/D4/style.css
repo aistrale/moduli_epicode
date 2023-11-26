@@ -1,0 +1,200 @@
+/* per organizzare i colori e richiamarli ogni volta che mi servono*/
+:root {
+    --logo-bg: #222F3E;
+    --nav-bg:#354758;
+    --header-bg: #f56600;
+    --link-color: #017185;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EAEDED;
+}
+
+.navbar {
+    background-color: var(--logo-bg);
+}
+
+.nav-logo {
+    margin-left: 30px;
+    padding: 5px;
+}
+
+.nav-logo img {
+    width: 60px;
+}
+
+.nav-menu {
+    background-color: var(--nav-bg);
+    color: white;
+    font-size: 12px;
+}
+
+.navbar-links  {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0 40px 0 40px;
+    padding: 6px;
+}
+
+.spacing {
+    padding: 20px;
+}
+
+.banner h4 {
+    background-color: var(--header-bg);
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin: 0;
+    font-weight: 150;
+    text-align: center;
+}
+
+.banner-logoContainer {
+    background-image: url(./assets/bg-image.png);
+    background-repeat: repeat;
+    background-size: contain;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+.banner-text h2,
+.banner-text h5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.banner-text h2 {
+    margin-bottom: 10px;
+}
+
+.gift-ideas {
+    background-color: white;
+    width: 100%;
+}
+
+.gift-ideas-text {
+    padding: 10px;
+}
+
+.gift-ideas-text span {
+    color: var(--link-color);
+}
+
+.gift-ideas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
+}
+
+.product-image {
+    width: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    min-height: 250px;
+    box-shadow: 10px 10px 10px rgba(171, 169, 169, 0.974);
+}
+
+.visor img {
+    width: 100%;
+}
+
+.visor-text {
+    text-align: center;
+}
+
+.visor-text span {
+    color: var(--link-color);
+}
+
+.audio img {
+    width: 100%;
+}
+
+.audio-text {
+    text-align: center;
+}
+
+.audio-text span {
+    color: var(--link-color);
+}
+
+.extra {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.other-ideas-container {
+    background-color: white;
+}
+
+.other-ideas-container h3 {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.other-ideas-container-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+.extra-text {
+    color: var(--link-color);
+}
+
+.footer-link {
+    background-color: var(--nav-bg);
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.footer-logo {
+    background-color: var(--logo-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 100px;
+    padding: 40px;
+}
