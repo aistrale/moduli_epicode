@@ -1,14 +1,18 @@
-.img-container {
+body {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 300px;
     height: 400px;
 }
 
-.tulips {
+.card img {
     width: 300px;
     height: 400px;
 }
@@ -26,32 +30,40 @@
     font-weight: bold;
     color: white;
     border: none;
-    display: none;
 }
 
-.share-buttons{
+.share-buttons {
     position: absolute;
     bottom: 10px;
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 30px;
 }
 
 .grey-button {
-    border-radius: 30%;
+    border-radius: 30px;
     padding: 8px;
     border-radius: 30px;
     font-weight: bold;
     border: none;
 }
 
-/* il + indica il sibling, l'elemento adiacente, vedi https://jsfiddle.net/1u05xztp/1/ */
+.save-button,
+.share-buttons {
+    opacity: 0;
+}
 
-/* OK */
-/* .img-container:hover {
+/* Per l'hover: partono nascosti e poi al passaggio del mouse compariranno*/
+
+/* All'hover */
+.card:hover {
     opacity: 0.5;
-} */
+    transition: 0.8s;
+}
 
-/* .img-container:hover .button-container{
+.card:hover .save-button,
+.card:hover .share-buttons {
     display: flex;
-} */
+    opacity: 1;
+    transition: 0.8s;
+}
