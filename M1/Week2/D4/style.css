@@ -1,5 +1,10 @@
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.black-strip {
+    background-color: black;
 }
 
 nav {
@@ -31,10 +36,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.nav-links:hover {
-    cursor: pointer;
 }
 
 .nav-links ul {
@@ -69,7 +70,7 @@ main {
 .main-left {
     display: flex;
     flex-direction: column;
-    width: 900px;
+    width: 65%;
     border-right: 1px solid lightgrey;
 }
 
@@ -146,14 +147,15 @@ main {
 
 .card-subtext-info {
     color: #757575;
+    font-size: small;
 }
 
 .card-subtext button {
-    background-color: lightgrey;
+    background-color: #F1F1F0;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 25px;
     border: none;
-    color: #797979;
+    color: #757575;
 }
 
 .card-subtext-icons ul {
@@ -174,7 +176,7 @@ main {
 .main-right {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 30%;
 }
 
 .socials-box {
@@ -211,11 +213,11 @@ main {
 .socials-box a {
     margin-top: 10px;
     margin-bottom: 30px;
-    color: #797979;
+    color: #757575;
 }
 
 .socials-box a:visited {
-    color: #797979;
+    color: #757575;
 }
 
 .topics-box {
@@ -304,6 +306,7 @@ main {
 .saved-box a {
     color: #1A8919;
     text-decoration: none;
+    font-size: small;
     
 }
 
@@ -313,9 +316,11 @@ main {
 }
 
 footer {
-    display: flex;
+    text-align: right;
+    margin-right: 35px;
+    /* display: flex;
     justify-content: flex-end;
-    margin-right: 600px;
+    flex-wrap: wrap; */
 }
 
 footer button {
@@ -325,13 +330,17 @@ footer button {
 }
 
 /* hover effects */
+.nav-links:hover {
+    cursor: pointer;
+}
+
 button:hover {
     cursor: pointer;
 }
 
 .page-sections h5:hover {
     color: #333;
-    font-weight: 800;
+    font-weight: bold;
     cursor: pointer;
     border-bottom:1px solid #333;
 }
