@@ -1,0 +1,1 @@
+In questo file ci sono sia gli esercizi delle slide che quelli inclusi nel file .zip scaricabile dalla piattaforma (i due file erano leggermente diversi)
