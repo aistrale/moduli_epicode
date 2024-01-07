@@ -1,0 +1,14 @@
+.flex-container {
+    display: flex;
+    min-height: calc(100vh - 91px);
+}
+
+/* .card {
+    display: flex;
+} */
+
+.card-img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}

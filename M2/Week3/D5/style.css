@@ -1,0 +1,32 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(214, 96, 96);
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    /* height: 100vh; */
+}
+
+.card-img {
+    width: 250px;
+    height: 350px;
+    /* object-fit: cover; */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+}

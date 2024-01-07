@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+
+<head>
+  <style>
+    .giant-font {
+      font-size: 3em;
+    }
+
+    .hidden {
+      visibility: hidden;
+    }
+
+    .newLink {
+      text-decoration: double;
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Completa gli esercizi dall'1 al 6 SOLAMENTE con HTML:
+
+  ES.1: Inserisci un tag h1 con il nome del tuo negozio
+
+  ES.2: Aggiungi una tabella con i 5 prodotti più in vista del tuo negozio
+
+  ES.3: Aggiungi per ogni prodotto un'immagine, un titolo, una descrizione e un prezzo
+
+  ES.4: Per ogni elemento della tabella aggiungi un link di Amazon al prodotto esistente
+
+  ES.5: Aggiungi un footer con il nome e l'indirizzo del tuo negozio
+
+  ES.6: Aggiungi un campo testuale in cui l'utente può lasciare un commento su un prodotto (al momento non serve inserire
+  nessuna "vera" funzionalità di post/salvataggio!)
+  
+  
+  Il resto delle risposte deve essere scritto in JavaScript:
+  
+  
+  ES.7: Scrivi una funzione per cambiare il contenuto del tag h1 in qualcos'altro
+
+  ES.8: Scrivi una funzione per cambiare il colore di background della pagina
+
+  ES.9: Scrivi una funzione per cambiare l'indirizzo presente nel futuro in un altro, fittizio
+
+  ES.10: Scrivi una funzione per aggiungere una classe CSS ad ogni link Amazon della tabella
+
+  ES.11: Scrivi una funzione per aggiungere/togliere una classe CSS a tutte le immagini della tabella; questa classe deve modificare la visibilità/invisibilità dell'immagine
+
+  ES.12: Scrivi una funzione per cambiare il colore del prezzo di ogni prodotto in uno differente, ogni volta che viene invocata -->
+  <h1>Smartphone Shop</h1>
+  <table>
+    <tr>
+      <th>Image</th>
+      <th>Amazon Link</th>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://via.placeholder.com/150" />
+      </td>
+      <td>
+        <a
+          href="https://www.backmarket.it/iphone-8-256-go-grigio-siderale-sbloccato-da-tutti-gli-operatori-miglior-prezzo/36830.html?shopping=gmc&gclid=Cj0KCQjwi7yCBhDJARIsAMWFScMjZzOVcEF5pNGKC0iOZ6szYpA7VKH-Pqv4bKc8p2IdfJZnfR_Hg8IaAtV3EALw_wcB"
+        >
+          iPhone
+        </a>
+      </td>
+      <td>Just an anonymous iPhone</td>
+      <td class="price">$700</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://via.placeholder.com/150" />
+      </td>
+      <td>
+        <a
+          href="https://www.backmarket.it/iphone-8-256-go-grigio-siderale-sbloccato-da-tutti-gli-operatori-miglior-prezzo/36830.html?shopping=gmc&gclid=Cj0KCQjwi7yCBhDJARIsAMWFScMjZzOVcEF5pNGKC0iOZ6szYpA7VKH-Pqv4bKc8p2IdfJZnfR_Hg8IaAtV3EALw_wcB"
+        >
+          iPhone
+        </a>
+      </td>
+      <td>Just an anonymous iPhone</td>
+      <td class="price">$700</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="http://placehold.it/150x150" />
+      </td>
+      <td>
+        <a
+          href="https://swappie.com/it/iphone/iphone-8/iphone-8-64gb-grigio-siderale/?utm_source=google&utm_medium=cpc&utm_campaign=1610883783&utm_term=&gclid=Cj0KCQjwi7yCBhDJARIsAMWFScM7K12NSEgX8x6p7wRv1_cwBxkHMMf0FP9UsKV1CLP-y1rTBbDO6MAaAgL3EALw_wcB"
+        >
+          iPhone
+        </a>
+      </td>
+      <td>Just an anonymous iPhone</td>
+      <td class="price">$700</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://via.placeholder.com/150" />
+      </td>
+      <td>
+        <a
+          href="https://www.backmarket.it/iphone-8-256-go-grigio-siderale-sbloccato-da-tutti-gli-operatori-miglior-prezzo/36830.html?shopping=gmc&gclid=Cj0KCQjwi7yCBhDJARIsAMWFScMjZzOVcEF5pNGKC0iOZ6szYpA7VKH-Pqv4bKc8p2IdfJZnfR_Hg8IaAtV3EALw_wcB"
+        >
+          iPhone
+        </a>
+      </td>
+      <td>Just an anonymous iPhone</td>
+      <td class="price">$700</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="https://via.placeholder.com/150" />
+      </td>
+      <td>
+        <a
+          href="https://www.backmarket.it/iphone-8-256-go-grigio-siderale-sbloccato-da-tutti-gli-operatori-miglior-prezzo/36830.html?shopping=gmc&gclid=Cj0KCQjwi7yCBhDJARIsAMWFScMjZzOVcEF5pNGKC0iOZ6szYpA7VKH-Pqv4bKc8p2IdfJZnfR_Hg8IaAtV3EALw_wcB"
+        >
+          iPhone
+        </a>
+      </td>
+      <td>Just an anonymous iPhone</td>
+      <td class="price">$700</td>
+    </tr>
+  </table>
+
+  <textarea></textarea>
+  <input type="text" />
+
+  <footer>
+    <div>Smartphone Shop</div>
+    <div id="address">4817 Bolman Court, Champaign IL United States</div>
+  </footer>
+
+  <script>
+    const changeH1Text = function () {
+      document.querySelector('h1').innerText = 'Changed!'
+    }
+
+    const changeBackgroundColor = function () {
+      document.querySelector('body').style.backgroundColor = 'green'
+    }
+
+    const changeFakeAddress = function () {
+      document.querySelector('#address').innerText = 'New address! :) '
+      // document.querySelector("footer > div:nth-child(2)").innerHTML =
+      //   "FAKE ADDRESS Ã°Å¸Â¤Â«";
+      // document.querySelector('#address').innerText = "FAKE ADDRESS"
+    }
+
+    const addClassToLinks = function () {
+      let aTags = document.querySelectorAll('a') //array-like => NodeList
+      for (let i = 0; i < aTags.length; i++) {
+        aTags[i].classList.add('newLink')
+      }
+      // for (let node of document.querySelectorAll("a")) {
+      //   node.classList.add("giant-font");
+      // }
+    }
+
+    const toggleImagesClass = function () {
+      let images = document.querySelectorAll('img')
+      for (let i = 0; i < images.length; i++) {
+        const singleImg = images[i]
+        singleImg.classList.toggle('hidden') //if the element already has the class, it will take it away, if it doesn't it will add it
+      }
+      // for (let image of document.querySelectorAll("img")) {
+      //   image.classList.toggle("hidden"); // if the class is already set, remove it. otherwise, add it
+      // }
+    }
+    const getRandomColor = function () {
+      const red = Math.round(Math.random() * 255)
+      const green = Math.round(Math.random() * 255)
+      const blue = Math.round(Math.random() * 255)
+
+      return 'rgb(' + red + ', ' + green + ', ' + blue + ')'
+    }
+
+    const setRandomColor = function () {
+      const randomColor = getRandomColor()
+      let prices = document.querySelectorAll('.price')
+      for (let i = 0; i < prices.length; i++) {
+        let singlePrince = prices[i]
+        singlePrince.style.color = randomColor
+      }
+      // for (let price of document.querySelectorAll("tr > td:nth-child(4)")) {
+      //   price.style.color = color;
+      // }
+    }
+  </script>
+</body>

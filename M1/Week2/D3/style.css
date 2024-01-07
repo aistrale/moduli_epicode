@@ -86,12 +86,12 @@ figure {
 }
 
 footer {
-    height: 90px;
+    /* height: 90px; */
     background-color: #333333;
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 footer ul {
@@ -100,7 +100,7 @@ footer ul {
     gap: 15px;
 }
 
-footer a {
+/* footer a {
     padding: 3px;
 }
 
@@ -116,4 +116,4 @@ footer a:hover {
     background-color: #D5B8A9;
     padding: 3px;
     color: white;
-}
+} */
