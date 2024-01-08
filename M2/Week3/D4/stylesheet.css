@@ -1,0 +1,20 @@
+body {
+    font-family:'Segoe UI', sans-serif;
+    color: #333;
+    font-size: small;
+    background-color: #ffffff;
+}
+
+h1{
+    text-align: center;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+td {
+    text-align: center;
+  }
