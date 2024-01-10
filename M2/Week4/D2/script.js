@@ -30,28 +30,37 @@ function required(result){
 //     }
 // }
 
-    let isValid = true;
-    console.log(result.name.trim().length >=3);
-    
-    if (result.name.trim().length >=3) {
-        console.log("il nome è troppo corto");
-         isValid =false;
-    }
- }
-
-function validateName(name) {
-    return name.length >= 2;
+let isValid = true;
+if(validateName(result.name)){
+    console.log(result.name.trim.length >= 5);
+    console.log('hai un nome');
+    isValid=false;
+}
 }
 
+// function validateName(name) {
+//     return name.length >= 2;
+// }
+
+function validateName(inputNameValue) {
+    return inputNameValue.trim().length >= 5; // deve essere di almeno 5 lettere
+  }
+
  function getFormData(){
+    if(name.value === " "){
+        console.log('riprova');
+    }else {
+        nameValue=name.value
+    }
+
     const result = {
-        name:name.Value,
-        surname:surname.Value,
-        age:age.Value,
-        email:email.lValue,
-        password:password.Value,
-        passwordCheck:passwordCheck.Value,
-        gender:gender.Field
+        name:name.value,
+        surname:surname.value,
+        age:age.value,
+        email:email.value,
+        password:password.value,
+        passwordCheck:passwordCheck.value,
+        gender:gender.value,
     }
     console.log(result);
     return result
