@@ -31,7 +31,7 @@ console.log(searchJob("marketing", "berli"))
 /*
 FUNZIONE DI RICERCA
 1. prende i valori che l'utente inserisce nei campi input
-2. crea una variabile dove inserisce il risultato dell'algoritmO
+2. crea una variabile dove inserisce il risultato dell'algoritmo
 */
 function search() {
     const title = document.getElementById("searchJob").value;
@@ -60,7 +60,7 @@ form.addEventListener("submit", (e)=>{
 MOSTRARE I RISULTATI
 1. crea un contenitore <div> con all'interno un <ul>
 2. per ogni risultato della ricerca crea un <li> con il risultato
-3. mostrami il tutto nell'html
+3. mostra il tutto nell'html
 */
 
 // Visualizza risultati come <ul>
