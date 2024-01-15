@@ -31,7 +31,7 @@ console.log(searchJob("marketing", "berli"))
 /*
 FUNZIONE DI RICERCA
 1. prende i valori che l'utente inserisce nei campi input
-2. crea una variabile dove inserisce il risultato dell'algoritmO
+2. crea una variabile dove inserisce il risultato dell'algoritmo
 */
 function search() {
     const title = document.getElementById("searchJob").value;
