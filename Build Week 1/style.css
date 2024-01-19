@@ -1,6 +1,10 @@
 body {
     background-image: url("./assets/bg.jpg");
     background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
 }
 
 .logo {
@@ -66,7 +70,7 @@ li,
     border: none;
     width: 200px;
     height: 40px;
-    box-shadow: 5px 5px 5px 5px rgb(0,255,255);
+    box-shadow: 3px 3px 3px 3px rgb(0,255,255);
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -85,7 +89,48 @@ h2 {
 form {
     width: 600px;
     height: 150px;
+
 }
+
+.answers-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.answer-container {
+    border: 1px solid white;
+    width: calc(40%);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer-container:hover {
+    background-color: #d20094;
+}
+
+.isActive {
+    background-color: #d20094;
+}
+
+
+.answer-container label {
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 0;
+}
+
+input[type=radio] {
+    display: none;
+}
+
 
 h4 {
     color: white;
@@ -99,12 +144,9 @@ h4 span {
     color: #d20094;
 }
 
-label[for] {
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    padding: 0 20px 0 0;
-}
+/* input[type=radio] {
+    transform: scale(1.5);
+} */
 
 #submit {
     background-color: #00ffff;

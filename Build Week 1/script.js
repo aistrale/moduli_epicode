@@ -24,17 +24,24 @@ function createQuestion() {
           questionBox.append(questionTitle);
           document.body.append(questionBox);
           const questionForm = document.createElement("form");
+          const answers = document.createElement("div");
+          answers.classList.add("answers-div");
           for (let j=0; j<finalArray[i].length; j++) {
+          const answerBox = document.createElement("div");
+          answerBox.classList.add("answer-container");
           const questionButton = document.createElement("input");
           questionButton.type = "radio";
           questionButton.name = "group";
           questionButton.value = "option" + (j+1);
           questionButton.setAttribute("id", `option${j+1}`);
+          answerBox.onclick=(colorAnswerBox(answerBox));
           const questionLabel = document.createElement("label");
           questionLabel.setAttribute("for", `option${j+1}`);
           questionLabel.innerHTML = `${finalArray[i][j]}`;
-          questionForm.append(questionButton);
-          questionForm.append(questionLabel);
+          answerBox.append(questionButton);
+          answerBox.append(questionLabel);
+          answers.append(answerBox);
+          questionForm.append(answers);
           questionBox.append(questionForm);}
        
           const questionAnswered = document.createElement("h4");
@@ -80,6 +87,7 @@ welcomePage()
 function checkInput() {
   const test = document.querySelector('input[type="radio"]:checked');
   if(test){
+    console.log(test)
   return getLabelFromRadio(test)
   }
 
@@ -90,6 +98,14 @@ function checkInput() {
     return label.textContent
     }
   }
+}
+
+function colorAnswerBox(radioButton) {
+  if(radioButton.checked) {
+    radioButton.classList.add("isActive");
+  }
+
+
 }
 
 
@@ -148,7 +164,7 @@ function welcomePage() {
   const proceed = document.createElement("div");
   proceed.classList.add("proceed-container");
 
-  const proceedForm = document.createElement("form");
+  const proceedForm = document.createElement("div");
   proceedForm.classList.add("proceed-form");
 
   const checkbox = document.createElement("input");
@@ -178,7 +194,7 @@ function welcomePage() {
 function proceedChecked(welcomeTitle,instructions,proceed) {
   const test = document.getElementById("checkboxId");
   if(test.checked){
-    let seconds = 0;
+    let seconds = 50;
     timer(seconds)
     createQuestion();
     welcomeTitle.innerHTML = "";
@@ -208,6 +224,9 @@ function timer(seconds) {
   const timerElement = document.getElementById("timer");
   timerInterval = setInterval(() => {
     seconds--;
+    if(seconds===0){
+      clearInterval(timerInterval)
+    }
     timerElement.textContent = seconds;
   }, 1000);
   document.body.append(timerInterval)
