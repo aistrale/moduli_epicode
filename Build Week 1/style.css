@@ -107,7 +107,7 @@ label[for] {
 }
 
 #submit {
-    background-color: white;
+    background-color: #00ffff;
     border: none;
     width: 600px;
     height: 50px;
@@ -120,12 +120,20 @@ label[for] {
     color: white;
 }
 
-/* .timer-box {
-    border: 1px solid white;
+.timer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #00ffff;
+    border-radius: 50%;
     height: 50px;
     width: 50px;
     color: white;
-} */
+    position: absolute;
+    top: 60px;
+    right: 60px;
+
+}
 
 /* Final results CSS */
 .results-div {

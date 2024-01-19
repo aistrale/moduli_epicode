@@ -47,19 +47,24 @@ function createQuestion() {
           buttonOk.innerHTML = "NEXT";
           questionForm.append(buttonOk);
           buttonOk.addEventListener("click", (e) => {
-            let seconds = 0;
-            timer(seconds)
+            if(timerInterval){
+              clearInterval(timerInterval)              
+            }
+
             const userAnswer=checkInput()
             if(userAnswer===questions[i].correct_answer){
               contatore+=1
             }
             if(i<finalArray.length-1){
+              let seconds = 50;
+              timer(seconds)
               i+=1
               displayQuestion()
             }
             else {
               const resultsPercentage = (contatore*100)/questions.length;
               finalResult(resultsPercentage)
+              removeTimer()
             }
           }
           )
@@ -115,7 +120,7 @@ function finalResult(resultsPercentage) {
 function welcomePage() {
   const welcomeTitle = document.createElement("h1");
   welcomeTitle.classList.add("welcome-h1");
-  welcomeTitle.innerHTML = "Welcome to <strong>your exam</strong>";
+  welcomeTitle.innerHTML = "Welcome to your exam";
   document.body.append(welcomeTitle);
   const instructions = document.createElement("div");
   instructions.id = "instructionsDiv";
@@ -189,17 +194,27 @@ function proceedChecked(welcomeTitle,instructions,proceed) {
 
 }
 
+let timerBox
+let timerInterval
+let box
+
 function timer(seconds) {
-  const box = document.createElement("div");
+  if(!timerBox){ box = document.createElement("div");
   box.classList.add("timer-box");
-  const timerBox = document.createElement("div");
+  timerBox = document.createElement("div");
+  timerBox.id='timer'
   box.append(timerBox);
-  timerBox.id = "timer";
+  document.body.append(box)}
   const timerElement = document.getElementById("timer");
-  const timerInterval = setInterval(() => {
-    seconds++;
+  timerInterval = setInterval(() => {
+    seconds--;
     timerElement.textContent = seconds;
   }, 1000);
-  timerBox.append(timerInterval);
-  document.body.append(box);
+  document.body.append(timerInterval)
+}
+
+
+function removeTimer(){
+  box.remove()
+  timerBox.remove()
 }
