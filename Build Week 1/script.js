@@ -1,4 +1,5 @@
 const questionBox = document.createElement("div");
+questionBox.classList.add("main-div");
 
 function createQuestion() {
   let finalArray=[]
@@ -37,13 +38,13 @@ function createQuestion() {
           questionBox.append(questionForm);}
        
           const questionAnswered = document.createElement("h4");
-          questionAnswered.innerHTML = "question " + `${i+1}` + "/" + `${questions.length}`;
+          questionAnswered.innerHTML = "QUESTION " + `${i+1}` + "<span>/</span>" + `<span>${questions.length}</span>`;
           questionForm.append(questionAnswered);
          
           const buttonOk = document.createElement("button");
           buttonOk.id = "submit";
            // buttonOk.type = "submit";
-          buttonOk.innerHTML = "ok";
+          buttonOk.innerHTML = "NEXT";
           questionForm.append(buttonOk);
           buttonOk.addEventListener("click", (e) => {
             let seconds = 0;
@@ -65,45 +66,46 @@ function createQuestion() {
           
           
   }
-  displayQuestion()
 
-  
+  displayQuestion()  
 }
 
 welcomePage()
 
 function checkInput() {
   const test = document.querySelector('input[type="radio"]:checked');
-
-if(test){
+  if(test){
   return getLabelFromRadio(test)
-}
-
-function getLabelFromRadio(input) {
-  const id = input.id;
-  const label = document.querySelector(`label[for="${id}"]`);
-  if(label){
-    return label.textContent
   }
 
-}
+  function getLabelFromRadio(input) {
+    const id = input.id;
+    const label = document.querySelector(`label[for="${id}"]`);
+    if(label){
+    return label.textContent
+    }
+  }
 }
 
 
 function finalResult(resultsPercentage) {
-  const h1 = document.createElement("h1");
-  h1.innerHTML = resultsPercentage + ` %`;
+  const resultBox = document.createElement("div");
+  resultBox.classList.add("results-div");
+  const resultTitle = document.createElement("h3");
+  resultBox.append(resultTitle);
+  resultTitle.innerHTML = "Your final score is " + resultsPercentage + ` %`;
+  resultTitle.classList.add("results-h3");
   questionBox.innerHTML = "";
-  document.body.append(h1)
+  document.body.append(resultBox);
   if (resultsPercentage >= 60){
-    const p = document.createElement("p");
-    p.innerHTML = "test superato";
-    document.body.append(p);
+    const resultMessage1 = document.createElement("p");
+    resultMessage1.innerHTML = "Quiz passed!";
+    resultBox.append(resultMessage1);
   }
   else{
-    const p = document.createElement("p");
-    p.innerHTML = "test non superato";
-    document.body.append(p);
+    const resultMessage2 = document.createElement("p");
+    resultMessage2.innerHTML = "Quiz failed!";
+    resultBox.append(resultMessage2);
   }
   
   console.log(resultsPercentage)
@@ -112,40 +114,54 @@ function finalResult(resultsPercentage) {
 
 function welcomePage() {
   const welcomeTitle = document.createElement("h1");
-  welcomeTitle.innerHTML = "Welcome";
+  welcomeTitle.classList.add("welcome-h1");
+  welcomeTitle.innerHTML = "Welcome to <strong>your exam</strong>";
   document.body.append(welcomeTitle);
   const instructions = document.createElement("div");
   instructions.id = "instructionsDiv";
   const instructionsTitle = document.createElement("h3");
-  instructionsTitle.innerHTML = "instructions";
+  instructionsTitle.classList.add("instructions-h3");
+  instructionsTitle.innerHTML = "Instructions";
   instructions.append(instructionsTitle);
   const instructionsText = document.createElement("p");
-  instructionsText.innerHTML = "lorem ipsum";
+  instructionsText.innerHTML = "We don't expect most engineers to know the answers to all of these questions, so don't worry if you're unsure of a few of them.";
   instructions.append(instructionsText);
   const instructionsList = document.createElement("ul");
-  const listItem = document.createElement("li");
-  listItem.innerHTML = "list";
-  instructionsList.append(listItem);
+  const listItem1 = document.createElement("li");
+  listItem1.innerHTML = "Each question is <strong>timed</strong> and can only be <strong>answered</strong> once.";
+  const listItem2 = document.createElement("li");
+  listItem2.innerHTML = "Changing browser tab or opening other windows will <strong>invalidate the question</strong>.";
+  const listItem3 = document.createElement("li");
+  listItem3.innerHTML = "This exam will take approx. <strong>0-5 minutes</strong>.";
+  instructionsList.append(listItem1);
+  instructionsList.append(listItem2);
+  instructionsList.append(listItem3);
   instructions.append(instructionsList);
   document.body.append(welcomeTitle);
   document.body.append(instructions);
 
   const proceed = document.createElement("div");
-  proceed.classList.add("proceed");
-  
+  proceed.classList.add("proceed-container");
+
+  const proceedForm = document.createElement("form");
+  proceedForm.classList.add("proceed-form");
+
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
   checkbox.name = "myCheckbox";
-  checkbox.id = "checkboxID";
+  checkbox.id = "checkboxId";
+  proceedForm.append(checkbox);
 
   const checkboxLabel = document.createElement("label");
-  checkboxLabel.innerHTML = "i promise";
+  checkboxLabel.innerHTML = "I promise to answer myself without help from anyone";
+  checkboxLabel.classList.add("proceed-chechbox");
+  proceedForm.append(checkboxLabel);
 
-  checkbox.append(checkboxLabel);
-  proceed.append(checkbox);
+  proceed.append(proceedForm);
 
   const proceedButton = document.createElement("button");
-  proceedButton.innerHTML = "proceed";
+  proceedButton.innerHTML = "PROCEED";
+  proceedButton.classList.add("proceed-button");
   proceedButton.addEventListener("click", ()=>{
     proceedChecked(welcomeTitle,instructions,proceed)
   })
@@ -155,7 +171,7 @@ function welcomePage() {
 }
 
 function proceedChecked(welcomeTitle,instructions,proceed) {
-  const test = document.getElementById("checkboxID");
+  const test = document.getElementById("checkboxId");
   if(test.checked){
     let seconds = 0;
     timer(seconds)

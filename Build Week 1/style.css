@@ -1,6 +1,5 @@
 body {
     background-image: url("./assets/bg.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -10,47 +9,133 @@ body {
     margin: 20px 0 0 50px;
 }
 
-div {
+.main-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 80px;
 }
 
-h1 {
+/* Welcome page CSS*/
+.welcome-h1 {
     color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 60px;
+    margin: 40px 0 40px 80px;
 }
 
+#instructionsDiv {
+    margin: 80px;
+}
+
+.instructions-h3 {
+    color: #d20094;
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+li,
+.proceed-chechbox {
+    color: white;
+    font-size: small;
+    font-family: 'Inter', sans-serif;
+    line-height: 25px;
+}
+
+.proceed-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#checkboxId {
+    background-color: #0C113B;
+    accent-color: #00ffff;
+    border: 1px solid white;
+}
+
+.proceed-button {
+    background-color: #00ffff;
+    border: none;
+    width: 200px;
+    height: 40px;
+    box-shadow: 5px 5px 5px 5px rgb(0,255,255);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Questions page CSS */
 h2 {
     color: white;
     font-family: 'Outfit', sans-serif;
     font-size: 60px;
-    margin: 0;
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+form {
+    width: 600px;
+    height: 150px;
 }
 
 h4 {
     color: white;
     font-family: 'Inter', sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 100;
 }
 
-label {
+h4 span {
+    color: #d20094;
+}
+
+label[for] {
     color: white;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
+    padding: 0 20px 0 0;
 }
 
-p {
+#submit {
+    background-color: white;
+    border: none;
+    width: 600px;
+    height: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#submit:hover{
+    background: linear-gradient(180deg, rgba(210,0,148,1) 0%, rgba(144,0,128,1) 100%);
     color: white;
 }
 
-.proceed {
-    display: flex;
-    flex-direction: row;
-}
-
-.timer-box {
+/* .timer-box {
     border: 1px solid white;
     height: 50px;
     width: 50px;
     color: white;
+} */
+
+/* Final results CSS */
+.results-div {
+    margin: 80px;
+    text-align: center;
 }
+
+.results-h3 {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+}
+
