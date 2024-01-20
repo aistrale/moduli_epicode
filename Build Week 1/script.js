@@ -33,8 +33,8 @@ function createQuestion() {
           questionButton.type = "radio";
           questionButton.name = "group";
           questionButton.value = "option" + (j+1);
+          questionButton.addEventListener("change", ()=> colorAnswerBox(questionButton))
           questionButton.setAttribute("id", `option${j+1}`);
-          answerBox.onclick=(colorAnswerBox(answerBox));
           const questionLabel = document.createElement("label");
           questionLabel.setAttribute("for", `option${j+1}`);
           questionLabel.innerHTML = `${finalArray[i][j]}`;
@@ -50,7 +50,6 @@ function createQuestion() {
          
           const buttonOk = document.createElement("button");
           buttonOk.id = "submit";
-           // buttonOk.type = "submit";
           buttonOk.innerHTML = "NEXT";
           questionForm.append(buttonOk);
           buttonOk.addEventListener("click", (e) => {
@@ -101,8 +100,12 @@ function checkInput() {
 }
 
 function colorAnswerBox(radioButton) {
-  if(radioButton.checked) {
-    radioButton.classList.add("isActive");
+  const answerBoxes = document.querySelectorAll(".answer-container");
+  answerBoxes.forEach((box) => {
+      box.classList.remove("isActive");
+  });
+  if(radioButton.checked){
+    radioButton.parentNode.classList.add('isActive')
   }
 
 
@@ -207,7 +210,6 @@ function proceedChecked(welcomeTitle,instructions,proceed) {
     proceed.append(errorMessage);
     document.body.append(proceed);
   }
-
 }
 
 let timerBox
@@ -226,6 +228,8 @@ function timer(seconds) {
     seconds--;
     if(seconds===0){
       clearInterval(timerInterval)
+
+      simulateNextButtonClick()
     }
     timerElement.textContent = seconds;
   }, 1000);
@@ -236,4 +240,11 @@ function timer(seconds) {
 function removeTimer(){
   box.remove()
   timerBox.remove()
+}
+
+function simulateNextButtonClick() {
+  const nextButton = document.getElementById("submit");
+  if (nextButton) {
+      nextButton.click();
+  }
 }

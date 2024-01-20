@@ -110,6 +110,11 @@ form {
 
 .answer-container:hover {
     background-color: #d20094;
+    --edge-light: hsla(0, 0%, 50%, 1);
+    text-shadow: 0px 0px 10px var(--text-light);
+    box-shadow: inset 0.4px 1px 4px var(--edge-light),
+        2px 4px 8px hsla(0, 0%, 0%, 0.295);
+    transform: scale(1.1);
 }
 
 .isActive {
@@ -144,10 +149,6 @@ h4 span {
     color: #d20094;
 }
 
-/* input[type=radio] {
-    transform: scale(1.5);
-} */
-
 #submit {
     background-color: #00ffff;
     border: none;
@@ -158,8 +159,13 @@ h4 span {
 }
 
 #submit:hover{
-    background: linear-gradient(180deg, rgba(210,0,148,1) 0%, rgba(144,0,128,1) 100%);
+    background: linear-gradient(180deg, rgba(210, 0, 148, 1) 0%, rgba(144, 0, 128, 1) 100%);
     color: white;
+    --edge-light: hsla(0, 0%, 50%, 1);
+    text-shadow: 0px 0px 10px var(--text-light);
+    box-shadow: inset 0.4px 1px 4px var(--edge-light),
+        2px 4px 8px hsla(0, 0%, 0%, 0.295);
+    transform: scale(1.1);
 }
 
 .timer-box {
