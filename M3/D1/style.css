@@ -1,18 +1,35 @@
 /* ESERCIZIO 1: Crea un selettore per selezionare l'`<h1>` nella sezione "hero", ovvero nel jumbotron */
-
 h1 {
-    background-color: red;
+    background-color: yellow;
 }
 
 /* ESERCIZIO 2: Crea un selettore per selezionare tutti i figli dell'elemento navbar */
-
-nav>span {
-    background-color: red;
+nav span {
+    background-color: yellow;
 }
 
 /* ESERCIZIO 3: Crea un selettore per selezionare il link "Continua a leggere" del jumbotron */
-
-.font-weight-bold{
-    background-color: red;
+.font-weight-bold {
+    background-color: yellow;
 }
 
+/* ESERCIZIO 4: Crea un selettore per selezionare il primo blog post */
+.blog-post:first-of-type {
+    background-color: yellow;
+}
+
+/* ESERCIZIO 5: Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso */
+hr {
+    border-top: 2px solid red;
+}
+
+/* ESERCIZIO 6: Crea un selettore per selezionare i link pari della navbar */
+nav span:nth-last-of-type(even) {
+    color: red;
+}
+
+/* ESERCIZIO 7: Crea un selettore per selezionare tutti gli `<li>` della prima "ordered-list" della sidebar ("Archivio") */
+
+.list-unstyled:first-of-type {
+    color: red;
+}

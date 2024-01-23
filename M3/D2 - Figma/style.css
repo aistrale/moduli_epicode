@@ -4,17 +4,16 @@ body {
     
 }
 
-/* NAV CSS */
+/* NAV */
 nav {
-    padding: 0;
+    padding: 10px 60px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     color: white;
 }
 
-.nav--logo {
-    padding: 0;
+.nav--logo h3 {
+    padding-right: 40px;
     margin: 0;
     font-size: 25px;
 }
@@ -33,20 +32,21 @@ nav {
 }
 
 .nav--button {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
 .nav--button button {
     border: none;
-    border-radius: 10px;
-    font-size: 17px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
     text-transform: uppercase;
-    padding: 5px;
+    padding: 10px 15px;
 }
 
-
-/* HERO CSS */
+/* HERO */
 .hero {
     display: flex;
     flex-direction: column;
@@ -57,15 +57,19 @@ nav {
 
 .hero--titile {
     font-size: 50px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    width: 50%;
+    text-align: center;
 }
 
 .hero--img img {
     border-radius: 50%;
+    margin-top: 80px;
 }
 
 .hero--description {
-    width: 50%;
+    width: 30%;
+    text-align: center;
     font-size: 14px;
     line-height: 20px;
 }
@@ -98,7 +102,7 @@ nav {
     color: white;
 }
 
-/* BRANDS CSS */
+/* BRANDS */
 .brands {
     display: flex;
     color: white;
@@ -119,7 +123,7 @@ nav {
     object-fit: cover;
 }
 
-/* SKILLS CSS */
+/* SKILLS */
 .slogan {
     background-color: #1c1c22;
     color: white;
