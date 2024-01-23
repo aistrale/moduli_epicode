@@ -9,19 +9,40 @@ IMPORTANTE: NON PUOI inserire classi o id aggiuntivi nell'HTML, devi usare solo 
 
 Per testare i Selettori CSS puoi cambiare all'elemento che stai cercando di selezionare il colore, colore di sfondo, aggiungere un bordo colorato ecc. Se il selettore è corretto vedrai applicare quello stile all'elemento, se non succede significa che il selettore non è corretto o qualche altra regola CSS sta prevalendo. Controlla sempre dall'inspector del browser.
 
-ESERCIZIO 1) Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron
-ESERCIZIO 2) Crea un selettore per selezionare tutti i figli dell'elemento navbar
-ESERCIZIO 3) Crea un selettore per selezionare il link "Continua a leggere" del jumbotron
-ESERCIZIO 4) Crea un selettore per selezionare il primo blog post
-ESERCIZIO 5) Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso
-ESERCIZIO 6) Crea un selettore per selezionare i link pari della navbar
-ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio")
-ESERCIZIO 8) Crea un selettore per selezionare l'autore del secondo blog post
-ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post
-ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra
-ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso
-ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
+---
 
-...scorri in fondo fino allo <script> per trovare gli esercizi di JavaScript
+## ESERCIZIO 1
+Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron
 
- 
+## ESERCIZIO 2
+Crea un selettore per selezionare tutti i figli dell'elemento navbar
+
+## ESERCIZIO 3
+Crea un selettore per selezionare il link "Continua a leggere" del jumbotron
+
+## ESERCIZIO 4
+Crea un selettore per selezionare il primo blog post
+
+## ESERCIZIO 5
+Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso
+
+## ESERCIZIO 6
+Crea un selettore per selezionare i link pari della navbar
+
+## ESERCIZIO 7
+Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio")
+
+## ESERCIZIO 8
+Crea un selettore per selezionare l'autore del secondo blog post
+
+## ESERCIZIO 9
+Crea un selettore per selezionare il secondo <li> della lista del terzo blog post
+
+## ESERCIZIO 10
+Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra
+
+## ESERCIZIO 11
+Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso
+
+## ESERCIZIO 12
+Crea un selettore per selezionare il secondo link del footer
