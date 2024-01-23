@@ -12,7 +12,7 @@ Per testare i Selettori CSS puoi cambiare all'elemento che stai cercando di sele
 ---
 
 ## ESERCIZIO 1
-Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron
+Crea un selettore per selezionare l'`<h1>` nella sezione "hero", ovvero nel jumbotron
 
 ## ESERCIZIO 2
 Crea un selettore per selezionare tutti i figli dell'elemento navbar
