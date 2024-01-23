@@ -24,19 +24,19 @@ Crea un selettore per selezionare il link "Continua a leggere" del jumbotron
 Crea un selettore per selezionare il primo blog post
 
 ## ESERCIZIO 5
-Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso
+Crea un selettore per selezionare l'`<hr>` del primo blog post e colorarlo di rosso
 
 ## ESERCIZIO 6
 Crea un selettore per selezionare i link pari della navbar
 
 ## ESERCIZIO 7
-Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio")
+Crea un selettore per selezionare tutti gli `<li>` della prima "ordered-list" della sidebar ("Archivio")
 
 ## ESERCIZIO 8
 Crea un selettore per selezionare l'autore del secondo blog post
 
 ## ESERCIZIO 9
-Crea un selettore per selezionare il secondo <li> della lista del terzo blog post
+Crea un selettore per selezionare il secondo `<li>` della lista del terzo blog post
 
 ## ESERCIZIO 10
 Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra
