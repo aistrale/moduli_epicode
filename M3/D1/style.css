@@ -1,0 +1,18 @@
+/* ESERCIZIO 1: Crea un selettore per selezionare l'`<h1>` nella sezione "hero", ovvero nel jumbotron */
+
+h1 {
+    background-color: red;
+}
+
+/* ESERCIZIO 2: Crea un selettore per selezionare tutti i figli dell'elemento navbar */
+
+nav>span {
+    background-color: red;
+}
+
+/* ESERCIZIO 3: Crea un selettore per selezionare il link "Continua a leggere" del jumbotron */
+
+.font-weight-bold{
+    background-color: red;
+}
+
