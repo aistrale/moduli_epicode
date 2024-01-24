@@ -29,7 +29,18 @@ nav span:nth-last-of-type(even) {
 }
 
 /* ESERCIZIO 7: Crea un selettore per selezionare tutti gli `<li>` della prima "ordered-list" della sidebar ("Archivio") */
-
-.list-unstyled:first-of-type {
+.list-unstyled.mb-0 a {
     color: red;
 }
+
+
+/* ESERCIZIO 10: Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra */
+.float-right.mb-3.mr-3 {
+    background-color: yellow;
+}
+
+/* ESERCIZIO 11: Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso */
+.btn.btn-outline-secondary {
+    border: 5px solid green;
+}
+

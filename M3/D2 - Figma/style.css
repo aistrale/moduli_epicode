@@ -129,20 +129,19 @@ nav {
     color: white;
     display: flex;
     justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 90px;
+    padding: 90px 100px 0 90px;
 }
 
 .slogan--title h2{
     font-size: 50px;
-    line-height: 30px;
+    line-height: 70px;
+    margin: 0;
 }
 
 .slogan--title-before {
     position: relative;
     padding-left: 55px;
-    margin-left: 70px;
+    margin-left: 100px;
     margin-bottom: 0;
 }
 
@@ -150,9 +149,9 @@ nav {
     content: "";
     display: block;
     border-top: 1px solid white;
-    width: 60px;
+    width: 50px;
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 0;
 }
 
@@ -161,4 +160,144 @@ nav {
     background-clip: text;
     background-size: 100%;
     -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.slogan--buttons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+    gap: 15px;
+}
+
+.slogan--buttons button {
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    color: white;
+}
+
+.slogan--buttons button:first-of-type {
+    background-image: linear-gradient(45deg, #b26cea, #ff755f);
+    border: none;
+}
+
+.slogan--buttons button:last-of-type {
+    background-color: transparent;
+}
+
+/* SERVICES */
+.services {
+    color: white;
+    background-color: #1c1c22;
+    padding: 40px 100px 100px 90px;
+}
+
+.services hr {
+    margin: 0;
+}
+
+.services--item svg {
+    width: 50px;
+    height: 50px;
+    transform: rotate(-45deg);
+}
+
+.services--item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.services--item:hover {
+    background-image: linear-gradient(45deg, #b26cea, #ff755f);
+}
+
+.services--item p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* PROJECTS */
+.projects {
+    color: white;
+    padding: 40px 100px 100px 90px;
+}
+
+.projects--text {
+    display: flex;
+}
+
+.projects--text h3 {
+    font-size: 50px;
+    flex: 1;
+    margin: 0;
+    padding: 0 100px 50px 0;
+}
+
+.projects--text p {
+    flex: 1;
+    align-self: flex-end;
+    padding: 0 0 50px 100px;
+}
+
+.projects--cards {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects--cards-card {
+    background-color: #1c1c22;
+    /* width: 400px; */
+    border-radius: 30px;
+    /* min-width: 400px; */
+    flex: 1 1 40%;
+}
+
+.projects--cards-card img {
+    width: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.projects--cards-card h3 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.projects--cards-card p {
+    font-weight: 200;
+}
+
+.projects--cards-card-description {
+    padding: 25px;
+}
+
+/* STATS */
+.stats {
+    padding: 40px 100px 100px 90px;
+    background-color: #1c1c22;
+    color: white;
+}
+
+.stats--text {
+    display: flex;
+    gap: 20px;
+}
+
+.stats--text h3 {
+    font-size: 50px;
+    margin: 0;
+    flex: 1 1 50%;
+}
+
+.stats--text p {
+    flex: 1 1 25%;
 }
