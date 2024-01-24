@@ -1,46 +1,69 @@
-/* ESERCIZIO 1: Crea un selettore per selezionare l'`<h1>` nella sezione "hero", ovvero nel jumbotron */
+/* ESERCIZIO 1 */
 h1 {
-    background-color: yellow;
+    background-color: rgb(255, 255, 255, 0.5);
+    color: #3395FF;
+    padding: 5px;
 }
 
-/* ESERCIZIO 2: Crea un selettore per selezionare tutti i figli dell'elemento navbar */
+/* ESERCIZIO 2 */
 nav span {
-    background-color: yellow;
+    background-color: #E9ECEF;
+    color: #3395FF;
+    padding: 2px;
 }
 
-/* ESERCIZIO 3: Crea un selettore per selezionare il link "Continua a leggere" del jumbotron */
+/* ESERCIZIO 3 */
 .font-weight-bold {
-    background-color: yellow;
+    background-color: rgb(255, 255, 255, 0.5);
+    color: #3395FF;
+    padding: 5px;
 }
 
-/* ESERCIZIO 4: Crea un selettore per selezionare il primo blog post */
+/* ESERCIZIO 4 */
 .blog-post:first-of-type {
-    background-color: yellow;
+    background-color: #E9ECEF;
+    padding: 5px;
 }
 
-/* ESERCIZIO 5: Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso */
+/* ESERCIZIO 5 */
 hr {
-    border-top: 2px solid red;
+    border-top: 1px dotted red;
 }
 
-/* ESERCIZIO 6: Crea un selettore per selezionare i link pari della navbar */
+/* ESERCIZIO 6 */
 nav span:nth-last-of-type(even) {
-    color: red;
+    color: #55595C;
 }
 
-/* ESERCIZIO 7: Crea un selettore per selezionare tutti gli `<li>` della prima "ordered-list" della sidebar ("Archivio") */
+/* ESERCIZIO 7 */
 .list-unstyled.mb-0 a {
-    color: red;
+    text-transform: uppercase;
 }
 
+/* ESERCIZIO 8 */
+.blog-post:nth-of-type(2) .blog-post-meta a{
+    background-color: #E9ECEF;
+}
 
-/* ESERCIZIO 10: Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra */
+/* ESERCIZIO 9 */
+.blog-post:nth-of-type(3) li:nth-of-type(2) {
+    border: 2px dotted #3395FF;
+}
+
+/* ESERCIZIO 10 */
 .float-right.mb-3.mr-3 {
-    background-color: yellow;
+    border: 1px dotted #3395FF;
+    border-radius: 50px;
+    padding: 5px;
 }
 
-/* ESERCIZIO 11: Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso */
-.btn.btn-outline-secondary {
-    border: 5px solid green;
+/* ESERCIZIO 11 */
+.blog-pagination .btn.btn-outline-secondary {
+    border: 3px solid #55595C;
+}
+
+/* ESERCIZIO 12 */
+footer a:nth-of-type(2) {
+    background-color: #E9ECEF;
 }
 
