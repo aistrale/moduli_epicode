@@ -1,0 +1,36 @@
+body {
+    font-family: Verdana;
+}
+
+.nav--logo-img {
+    width: 50px;
+    height: 32px;
+}
+
+nav h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero--container {
+    background-color: #fff3e3;
+}
+
+.hero--container h1 {
+    color: #b8832f;
+}
+
+.hero--container-btn {
+    background-color: #b8832f;
+    color: white;
+    border: none;
+}
+
+.section-three--background {
+    background-color: #fcf8f3;
+}
+
+.section-three--btn {
+    background-color: #b8832f;
+    color: white;
+    border: none;
+}

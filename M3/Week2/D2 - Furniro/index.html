@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Furniro</title>
+  </head>
+  <body>
+
+    <nav class="container-fluid">
+        <div class="row p-3 d-flex align-items-center">
+            <div class="d-flex col-6 col-md-3">
+                <img class="nav--logo-img" src="./assets/logo.png" alt="">
+                <h4 class="fw-bold m-0">Furniro</h4>
+            </div>
+            <div class="col-6 d-flex d-md-none justify-content-end">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="burger-menu" width="30px" height="30px">
+                    <path fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8h26M7 16h18M3 24h26" data-name="Burger Menu"></path>
+                </svg>
+            </div>
+            <div class="d-none d-md-flex col-md-6 justify-content-md-center gap-5">
+                <div>Home</div>
+                <div>Shop</div>
+                <div>About</div>
+                <div>Contact</div>
+            </div>
+            <div class="d-none d-md-flex col-md-3 justify-content-md-center gap-3">
+                <div><ion-icon name="person-outline"></ion-icon></div>
+                <div><ion-icon name="search-outline"></ion-icon></div>
+                <div><ion-icon name="heart-outline"></ion-icon></div>
+                <div><ion-icon name="cart-outline"></ion-icon></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid position-relative p-0 m-0">
+        <div class="col-12 object-fit-cover">
+            <img class="w-100" src="https://picsum.photos/1920/1080" alt="background">
+        </div>
+        <div class="row w-100 h-100 position-absolute top-0 d-flex align-items-center d-none d-md-flex">
+            <div class="col-12 col-md-6 p-0 m-0"></div>
+            <div class="col-12 col-md-6 d-md-block p-5 m-0 hero--container">
+                <h2>New Arrival</h2>
+                <h1 class="fw-bold">Discover Our New Collection</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores obcaecati cum voluptate.</p>
+                <button class="py-3 px-5 hero--container-btn" >BUY NOW</button>
+            </div>
+        </div>
+        <div class="row  w-100 h-100 top-0 d-flex align-items-center">
+            <div class="col-12 d-block d-md-none p-5 m-0 hero--container">
+                <h2>New Arrival</h2>
+                <h1 class="fw-bold">Discover Our New Collection</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores obcaecati<br> cum voluptate! Quas unde explicabo amet officiis consequatur maiores.</p>
+                <button class="py-3 px-5 hero--container-btn" >BUY NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container p-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="fw-bold">Browse the range</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-6 col-md-4 ">
+                <img class="w-100 rounded" src="https://picsum.photos/400/500" alt="product">
+                <h4 class="text-center pt-4">Dining</h4>
+            </div>
+            <div class="col-6 col-md-4">
+                <img class="w-100 rounded" src="https://picsum.photos/400/500" alt="product">
+                <h4 class="text-center pt-4">Living</h4>
+            </div>
+            <div class="col-12 col-md-4 pt-2 pt-md-0 mh-50">
+                <img class="w-100 rounded" src="https://picsum.photos/400/500" alt="product">
+                <h4 class="text-center pt-4">Bedroom</h4>
+                <!-- responsive image
+                <img
+                    class="w-100"
+                    src="https://picsum.photos/400/500"
+                    srcset="https://picsum.photos/400/500 1x, https://picsum.photos/800/1000 2x, https://picsum.photos/1200/1500 3x"
+                    sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px" alt="product"> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="container p-5 pb-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="fw-bold">Our Products</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-3 pb-2">
+                <div class="card bg-light">
+                    <img src="https://picsum.photos/300/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 1</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card bg-light">
+                    <img src="https://picsum.photos/300/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 2</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card bg-light">
+                    <img src="https://picsum.photos/300/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 3</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card bg-light">
+                    <img src="https://picsum.photos/300/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 4</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card bg-light">
+                    <img src="https://picsum.photos/300/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 5</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card bg-light">
+                    <img src="https://picsum.photos/300/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 6</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card bg-light">
+                    <img src="https://picsum.photos/300/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 7</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card bg-light">
+                    <img src="https://picsum.photos/300/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Product 8</h5>
+                      <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid p-5 section-three--background">
+        <div class="row d-flex align-items-center">
+            <div class="col-12 col-md-3 offset-md-1 pb-3 pb-md-0">
+                <h2 class="fw-bold">50+ Beautiful rooms inspiration</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button class="btn section-three--btn">Explore More</button>
+            </div>
+            <div class="col-12 col-md-4 pb-3 pb-md-0">
+                <img class="w-100" src="https://picsum.photos/400/500" alt="product">
+            </div>
+            <div class="col-12 col-md-4 pb-3 pb-md-0">
+                <img class="w-100" src="https://picsum.photos/400/500" alt="product">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
