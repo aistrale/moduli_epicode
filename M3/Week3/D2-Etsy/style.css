@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav h2 {
+    color: orange;
+}
+
+.nav-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 9px 15px;
+}
+
+.nav-menu-btn:hover {
+    background-color: rgb(226, 226, 226);
+    border-radius: 20px;
+}
+
+.search-icon {
+    margin-right: 8px;
+}
+
+.search-bar {
+position: relative;
+}
+
+.nav-search {
+    min-width: 650px;
+    width: 100%;
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 24px;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-search-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: orange;
+    width: 40px;
+    height: 40px;
+}
+
+.section-btn {
+    border: none;
+    padding: 9px 15px;
+    background-color: rgb(226, 226, 226);
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.section-btn:hover {
+    background-color: rgb(181, 178, 178);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.product-grid {
+    padding: 2px;
+}
