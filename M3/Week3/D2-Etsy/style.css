@@ -4,8 +4,8 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-nav h2 {
-    color: orange;
+.nav-logo {
+    color: #F1641E;
 }
 
 .nav-menu-btn {
