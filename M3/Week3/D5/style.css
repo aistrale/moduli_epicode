@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.ball1 {
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    border-radius: 50%;
+    animation: bounce 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(200px);
+    }
+} */
+
+.ball2 {
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    border-radius: 50%;
+    animation: slide 1s ease-in-out infinite alternate;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+@keyframes slide {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 100px);
+
+    }
+}

@@ -2,13 +2,9 @@ body {
     background-color: #F5F4F8;
 }
 
+/* NAVBAR */
 nav {
     background-color: #fff;
-}
-
-.nav-avatar {
-    width: 35px;
-    height: 35px;
 }
 
 .nav-btn {
@@ -16,13 +12,37 @@ nav {
     background-color: transparent;
 }
 
-.nav-notification-icon {
+.bell-icon {
     background-color: #F5F4F8;
     border-radius: 50%;
     width: 35px;
     height: 35px;
 }
 
+.bell-dot {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #7550FE;
+}
+
+.nav-avatar {
+    width: 35px;
+    height: 35px;
+}
+
+.nav-avatar-dot {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+/* HERO AND SUB-HERO */
 .hero {
     background-color: #7550FE;
     color: #BCA8FF;
@@ -50,7 +70,7 @@ nav {
 }
 
 .subhero {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(221, 219, 219);
     background-color: #fff;
 }
 
@@ -71,6 +91,15 @@ nav {
     color: #000;
 }
 
+/* CARDS */
+.stars {
+    color: #FFAA46;
+}
+
+.reviews {
+    color: #A8A3B9;
+}
+
 .on-sale {
     text-decoration: line-through;
     color: #A8A3B9;
@@ -80,45 +109,13 @@ nav {
     font-weight: 700;
 }
 
+.border-avatar {
+    border-top: 1px solid rgb(221, 219, 219);
+}
+
+/* FOOTER */
 .text-color {
     color: #5C5776;
 }
 
-.rating-color{
-    color:#fbc634 !important;
-}
 
-/* carousel */
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-        transform: translateX(25%);
-    }
-
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev {
-        transform: translateX(-25%);
-    }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-    transform: translateX(0);
-}

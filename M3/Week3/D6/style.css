@@ -1,0 +1,22 @@
+/* logo */
+.figure {
+    animation: logo 1s ease-in;
+}
+
+@keyframes logo {
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateX();
+        opacity: 1;
+    }
+}
+
+/* link */
+a {
+    animation:
+}
+
+@keyframes link 
