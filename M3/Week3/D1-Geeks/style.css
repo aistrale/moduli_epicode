@@ -1,5 +1,6 @@
 body {
     background-color: #F5F4F8;
+    font-family: "Inter", sans-serif;
 }
 
 /* NAVBAR */
@@ -19,27 +20,9 @@ nav {
     height: 35px;
 }
 
-.bell-dot {
-    top: 0;
-    right: 0;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: #7550FE;
-}
-
 .nav-avatar {
     width: 35px;
     height: 35px;
-}
-
-.nav-avatar-dot {
-    top: 0;
-    right: 0;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: green;
 }
 
 /* HERO AND SUB-HERO */
@@ -92,6 +75,12 @@ nav {
 }
 
 /* CARDS */
+
+.course-description {
+    font-size: small;
+    padding-bottom: 10px;
+}
+
 .stars {
     color: #FFAA46;
 }
@@ -107,6 +96,7 @@ nav {
 
 .current-price {
     font-weight: 700;
+    font-size: 15px;
 }
 
 .border-avatar {
