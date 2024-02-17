@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'Feather';
+    src: url(./fonts/feather.ttf) format('ttf'),
+         url('./fonts/fa-regular-400.woff2') format('woff2');
+}
+
 body {
     background-color: #F5F4F8;
-    font-family: "Inter", sans-serif;
+    font-family: 'Feather', sans-serif;
 }
 
 /* NAVBAR */
@@ -18,12 +24,36 @@ nav {
     border-radius: 50%;
     width: 35px;
     height: 35px;
+    position: relative;
 }
+
+.bell-badge {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    background-color: #7550FE;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
 .nav-avatar {
     width: 35px;
     height: 35px;
+    position: relative;
 }
+
+.nav-badge {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    background-color: #1ACB98;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 
 /* HERO AND SUB-HERO */
 .hero {
@@ -75,10 +105,20 @@ nav {
 }
 
 /* CARDS */
+.card-body h6 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.h6-ellipses {
+    white-space: nowrap;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .course-description {
     font-size: small;
-    padding-bottom: 10px;
 }
 
 .stars {
@@ -101,11 +141,46 @@ nav {
 
 .border-avatar {
     border-top: 1px solid rgb(221, 219, 219);
+    padding-bottom: 10px;
+}
+
+.avatar-name {
+    font-size: small;
+}
+
+/* CARD ANIMATIONS */
+.card-hover:hover {
+    animation: cardHover 1s ease-in forwards;
+    transform: scale(1.1);
+    box-shadow: 10px #5C5776;
+}
+
+@keyframes cardHover {
+    0% {
+        transform: scale(1) !important;
+        box-shadow: 0 #5C5776;
+    }
+    100% {
+        transform: scale(1.1) !important;
+        box-shadow: 10px #5C5776;
+    }
+}
+
+.save-btn:hover {
+    animation: saveButtonHover 1s linear forwards;
+}
+
+@keyframes saveButtonHover {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #5C5776;
+    }
 }
 
 /* FOOTER */
 .text-color {
     color: #5C5776;
 }
-
 

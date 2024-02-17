@@ -1,22 +1,83 @@
-/* logo */
-.figure {
-    animation: logo 1s ease-in;
+/* logo-img */
+.img-logo {
+    opacity: 0;
+    animation: imageAnimation 0.8s linear forwards;
 }
 
-@keyframes logo {
+@keyframes imageAnimation {
     from {
-        transform: translateX(0);
+        transform: translateX(250px);
         opacity: 0;
     }
     to {
-        transform: translateX();
+        transform: translateX(0);
         opacity: 1;
     }
 }
 
-/* link */
-a {
-    animation:
+/* menu */
+.links-menu1 {
+    opacity: 0;
+    animation: imageAnimation 1s linear 1s forwards;
 }
 
-@keyframes link 
+.links-menu2 {
+    opacity: 0;
+    animation: imageAnimation 1s linear 2s forwards;
+}
+
+.links-menu3 {
+    opacity: 0;
+    animation: imageAnimation 1s linear 2.5s forwards;
+}
+
+/* .logo {
+    opacity: 0;
+    animation: imageAnimation 0.8s linear 3s forwards;
+} */
+
+.heart {
+    width: 100px;
+    height: 90px;
+    
+    position: relative;
+    margin-top: 5px;
+    animation: heartbeat 1s ease-in-out infinite;
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    background-color: red;
+}
+
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+    
+}
+
+/* @keyframes heartbeat {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+} */
+
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-top: 10px;
+}

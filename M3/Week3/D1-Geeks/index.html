@@ -22,9 +22,23 @@
         <a class="navbar-brand" href="#">
           <img src="./assets/logo.svg" alt="">
         </a>
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="d-flex flex-row-reverse flex-md-row order-md-5">
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="d-flex justify-content-end align-items-center gap-1 m-1">
+              <div class="bell-icon d-flex align-items-center justify-content-center">
+                <i class="far fa-bell"></i>
+                <div class="bell-badge"></div>
+              </div>
+              <div class="nav-avatar">
+                <img src="./assets/avatar-1.jpg" class="rounded-circle nav-avatar" alt="">
+                <div class="nav-badge"></div>
+              </div>
+            </div>
+        </div>
+        
 
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav gap-md-3">
@@ -62,7 +76,7 @@
               <button class="dropdown-toggle nav-btn" type="button" data-bs-toggle="dropdown">
                 Accounts
               </button>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu p-2">
                 <li>Link 1</li>
                 <li>Link 2</li>
                 <li>Link 3</li>
@@ -71,12 +85,7 @@
           </ul>
         </div>
 
-        <div class="d-flex justify-content-end align-items-center gap-1 m-1">
-          <div class="bell-icon d-flex align-items-center justify-content-center">
-            <i class="far fa-bell"></i>
-          </div>
-          <img src="./assets/avatar-1.jpg" class="rounded-circle nav-avatar" alt="">
-        </div>
+        
       </div>
     </nav>
 
@@ -100,7 +109,7 @@
       </div>
     </section>
 
-    <section class="container-fluid pt-3 pb-3 mb-3 subhero">
+    <section class="container-fluid pt-3 pb-3 mb-3 d-flex justify-content-center subhero">
       <div class="row">
         <div class="col-12 col-md-4">
           <div class="d-flex mb-4 mb-md-0">
@@ -140,480 +149,1048 @@
 
     <section class="container">
       <div class="row">
-        <div class="col-12">
-          <h2 class="pt-5">Recommended to you</h2>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="card">
-            <img src="./assets/course-graphql.jpg" class="card-img-top" alt="graphql image">
-            <div class="card-body">
-              <h6>GraphQL: introduction to graphQL for beginners</h6>
-              <div class="course-description">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg> 2h 40m
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
-                  <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
-                  <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
-                </svg> Advanced
-              </div>
-              <div class="d-flex align-items-center stars course-description">
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                2.5 <span class="reviews">(1,500)</span>
-              </div>
-              <div class="course-description">
-              <span class="current-price">&#36;500</span> <span class="on-sale">&#36;600</span>
-              </div>
-            </div>
-            <div class="card-body d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2 border-avatar">
-                <img src="./assets/avatar-5.jpg" class="nav-avatar rounded-circle" alt="">
-              <p class="m-0">Brooklyn Simmons</p>
-              </div>
-              <i class="far fa-bookmark"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="card">
-            <img src="./assets/course-javascript.jpg" class="card-img-top" alt="graphql image">
-            <div class="card-body">
-              <h6>A Complete Beginner's Guide to JavaScript</h6>
-              <div class="course-description">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg> 4h 10m
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
-                  <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
-                  <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
-                </svg> Advanced
-              </div>
-              <div class="d-flex align-items-center stars course-description">
-                <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
-                  <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor;"></path>ù
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
-                  <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
-                  <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
-                  <path d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
-                  <path d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" style="fill: currentcolor;"></path>
-                </svg>
-                3.5 <span class="reviews"> (7,500)</span>
-              </div>
-              <div>
-              <span class="current-price">&#36;700</span> <span class="on-sale">&#36;850</span>
-              </div>
-            </div>
-            <div class="card-body d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2 border-avatar">
-                <img src="./assets/avatar-1.jpg" class="nav-avatar rounded-circle" alt="">
-              <p class="m-0">Jenny Wilson</p>
-              </div>
-              <i class="far fa-bookmark"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="card">
-            <img src="./assets/course-node.jpg" class="card-img-top" alt="graphql image">
-            <div class="card-body">
-              <h6>Beginning Node.js, Express & MongoDB Development</h6>
-              <div class="course-description">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg> 2h 00m
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
-                  <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
-                  <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
-                </svg> Intermediate
-              </div>
-              <div class="d-flex align-items-center stars course-description">
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                4.0 <span class="reviews"> (15,700)</span>
-              </div>
-              <div>
-              <span class="current-price">&#36;800</span> <span class="on-sale">&#36;950</span>
-              </div>
-            </div>
-            <div class="card-body d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2 border-avatar">
-                <img src="./assets/avatar-3.jpg" class="nav-avatar rounded-circle" alt="">
-              <p class="m-0">Sina Ray</p>
-              </div>
-              <i class="far fa-bookmark"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="card">
-            <img src="./assets/course-laravel.jpg" class="card-img-top" alt="graphql image">
-            <div class="card-body">
-              <h6>Laravel: The Ultimate Beginner's Guide to Learn</h6>
-              <div class="course-description">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg> 1h 00m
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
-                  <rect x="7" y="5" width="2" height="9" rx="1" fill="#A8A3B9"></rect>
-                  <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
-                </svg> Beginner
-              </div>
-              <div class="d-flex align-items-center stars course-description">
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                4.5 <span class="reviews"> (2,500)</span>
-              </div>
-              <div>
-              <span class="current-price">&#36;170</span> <span class="on-sale">&#36;220</span>
-              </div>
-            </div>
-            <div class="card-body d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2 border-avatar">
-                <img src="./assets/avatar-7.jpg" class="nav-avatar rounded-circle" alt="">
-              <p class="m-0">Sobo Rikhan</p>
-              </div>
-              <i class="far fa-bookmark"></i>
-            </div>
-          </div>
-        </div>
+        <h2 class="pt-5">Recommended to you</h2>
       </div>
+      <div id="carouselOne" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-6 col-md-3 card-hover">
+                <div class="card">
+                  <img src="./assets/course-graphql.jpg" class="card-img-top" alt="graphql image">
+                  <div class="card-body">
+                    <h6 class="h6-ellipses">GraphQL: introduction to graphQL for beginners</h6>
+                    <div class="course-description">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg> 2h 40m
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                        <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                        <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                      </svg> Advanced
+                    </div>
+                    <div class="d-flex align-items-center stars course-description">
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      2.5 <span class="reviews">(1,500)</span>
+                    </div>
+                    <div class="course-description">
+                    <span class="current-price">&#36;500</span> <span class="on-sale">&#36;600</span>
+                    </div>
+                  </div>
+                  <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="./assets/avatar-5.jpg" class="nav-avatar rounded-circle" alt="">
+                    <p class="m-0 avatar-name">Brooklyn Simmons</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                      <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="card">
+                  <img src="./assets/course-javascript.jpg" class="card-img-top" alt="graphql image">
+                  <div class="card-body">
+                    <h6 class="h6-ellipses">A Complete Beginner's Guide to JavaScript</h6>
+                    <div class="course-description">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg> 4h 10m
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                        <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                        <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                      </svg> Advanced
+                    </div>
+                    <div class="d-flex align-items-center stars course-description">
+                      <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                        <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor;"></path>ù
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                        <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                        <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                        <path d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                        <path d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" style="fill: currentcolor;"></path>
+                      </svg>
+                      3.5 <span class="reviews"> (7,500)</span>
+                    </div>
+                    <div>
+                    <span class="current-price">&#36;700</span> <span class="on-sale">&#36;850</span>
+                    </div>
+                  </div>
+                  <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="./assets/avatar-1.jpg" class="nav-avatar rounded-circle" alt="">
+                    <p class="m-0 avatar-name">Jenny Wilson</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                      <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                    </svg>
+                  </div>
+                </div>                
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="card">
+                  <img src="./assets/course-node.jpg" class="card-img-top" alt="graphql image">
+                  <div class="card-body">
+                    <h6 class="h6-ellipses">Beginning Node.js, Express & MongoDB Development</h6>
+                    <div class="course-description">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg> 2h 00m
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                        <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                        <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
+                      </svg> Intermediate
+                    </div>
+                    <div class="d-flex align-items-center stars course-description">
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      4.0 <span class="reviews"> (15,700)</span>
+                    </div>
+                    <div>
+                    <span class="current-price">&#36;800</span> <span class="on-sale">&#36;950</span>
+                    </div>
+                  </div>
+                  <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="./assets/avatar-3.jpg" class="nav-avatar rounded-circle" alt="">
+                    <p class="m-0 avatar-name">Sina Ray</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                      <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="card">
+                  <img src="./assets/course-laravel.jpg" class="card-img-top" alt="graphql image">
+                  <div class="card-body">
+                    <h6 class="h6-ellipses">Laravel: The Ultimate Beginner's Guide to Learn</h6>
+                    <div class="course-description">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg> 1h 00m
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                        <rect x="7" y="5" width="2" height="9" rx="1" fill="#A8A3B9"></rect>
+                        <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
+                      </svg> Beginner
+                    </div>
+                    <div class="d-flex align-items-center stars course-description">
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      4.5 <span class="reviews"> (2,500)</span>
+                    </div>
+                    <div>
+                    <span class="current-price">&#36;170</span> <span class="on-sale">&#36;220</span>
+                    </div>
+                  </div>
+                  <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="./assets/avatar-7.jpg" class="nav-avatar rounded-circle" alt="">
+                    <p class="m-0 avatar-name">Sobo Rikhan</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                      <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-6 col-md-3">
+                <div class="card">
+                  <img src="./assets/course-python.jpg" class="card-img-top" alt="graphql image">
+                  <div class="card-body">
+                    <h6 class="h6-ellipses">Python: Lorem ipsum sit.</h6>
+                    <div class="course-description">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg> 2h 40m
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                        <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                        <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                      </svg> Advanced
+                    </div>
+                    <div class="d-flex align-items-center stars course-description">
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      2.5 <span class="reviews">(1,500)</span>
+                    </div>
+                    <div class="course-description">
+                    <span class="current-price">&#36;500</span> <span class="on-sale">&#36;600</span>
+                    </div>
+                  </div>
+                  <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="./assets/avatar-5.jpg" class="nav-avatar rounded-circle" alt="">
+                    <p class="m-0 avatar-name">Brooklyn Simmons</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                      <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="card">
+                  <img src="./assets/course-css.jpg" class="card-img-top" alt="graphql image">
+                  <div class="card-body">
+                    <h6 class="h6-ellipses">CSS: Lorem, ipsum dolor.</h6>
+                    <div class="course-description">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg> 2h 40m
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                        <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                        <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                      </svg> Advanced
+                    </div>
+                    <div class="d-flex align-items-center stars course-description">
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      2.5 <span class="reviews">(1,500)</span>
+                    </div>
+                    <div class="course-description">
+                    <span class="current-price">&#36;500</span> <span class="on-sale">&#36;600</span>
+                    </div>
+                  </div>
+                  <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="./assets/avatar-5.jpg" class="nav-avatar rounded-circle" alt="">
+                    <p class="m-0 avatar-name">Brooklyn Simmons</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                      <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="card">
+                  <img src="./assets/course-wordpress.jpg" class="card-img-top" alt="graphql image">
+                  <div class="card-body">
+                    <h6 class="h6-ellipses">Wordpress: Lorem, ipsum dolor.</h6>
+                    <div class="course-description">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg> 2h 40m
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                        <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                        <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                      </svg> Advanced
+                    </div>
+                    <div class="d-flex align-items-center stars course-description">
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      2.5 <span class="reviews">(1,500)</span>
+                    </div>
+                    <div class="course-description">
+                    <span class="current-price">&#36;500</span> <span class="on-sale">&#36;600</span>
+                    </div>
+                  </div>
+                  <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="./assets/avatar-5.jpg" class="nav-avatar rounded-circle" alt="">
+                    <p class="m-0 avatar-name">Brooklyn Simmons</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                      <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="card">
+                  <img src="./assets/course-angular.jpg" class="card-img-top" alt="graphql image">
+                  <div class="card-body">
+                    <h6 class="h6-ellipses">Angular: Lorem, ipsum dolor.</h6>
+                    <div class="course-description">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg> 2h 40m
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                        <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                        <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                      </svg> Advanced
+                    </div>
+                    <div class="d-flex align-items-center stars course-description">
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      <svg viewBox="0 0 24 24" role="presentation"
+                          style="width: 0.875rem; height: 0.875rem;">
+                          <path
+                              d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                              style="fill: currentcolor;"></path>
+                      </svg>
+                      2.5 <span class="reviews">(1,500)</span>
+                    </div>
+                    <div class="course-description">
+                    <span class="current-price">&#36;500</span> <span class="on-sale">&#36;600</span>
+                    </div>
+                  </div>
+                  <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="./assets/avatar-5.jpg" class="nav-avatar rounded-circle" alt="">
+                    <p class="m-0 avatar-name">Brooklyn Simmons</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                      <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
+    <section class="container">
       <div class="row">
         <div class="col-12">
           <h2 class="pt-5">Most Popular</h2>
         </div>
-        <div class="col-6 col-md-3">
-          <div class="card">
-            <img src="./assets/course-html.jpg" class="card-img-top" alt="graphql image">
-            <div class="card-body">
-              <h6>HTML Full Course - Build a Website Tutorial</h6>
-              <div class="course-description">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg> 3h 16m
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
-                  <rect x="7" y="5" width="2" height="9" rx="1" fill="#A8A3B9"></rect>
-                  <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
-                </svg> Beginner
-              </div>
-              <div class="d-flex align-items-center stars course-description">
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                3.0 <span class="reviews">(1,600)</span>
-              </div>
-              <div>
-              <span class="current-price">&#36;550</span> <span class="on-sale">&#36;700</span>
+        <div id="carouselTwo" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-html.jpg" class="card-img-top" alt="course image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">HTML Full Course - Build a Website Tutorial</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 3h 16m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#A8A3B9"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
+                        </svg> Beginner
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        3.0 <span class="reviews">(1,600)</span>
+                      </div>
+                      <div>
+                      <span class="current-price">&#36;550</span> <span class="on-sale">&#36;700</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-8.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Miston Wilson</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-javascript.jpg" class="card-img-top" alt="graphql image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">A Complete Beginner's Guide to JavaScript</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 4h 10m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                        </svg> Advanced
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                          <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor;"></path>ù
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                          <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                          <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                          <path d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
+                          <path d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" style="fill: currentcolor;"></path>
+                        </svg>
+                        3.5 <span class="reviews"> (7,500)</span>
+                      </div>
+                      <div>
+                      <span class="current-price">&#36;700</span> <span class="on-sale">&#36;850</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-1.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Jenny Wilson</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>                
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-node.jpg" class="card-img-top" alt="graphql image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">Beginning Node.js, Express & MongoDB Development</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 2h 00m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
+                        </svg> Intermediate
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        4.0 <span class="reviews"> (15,700)</span>
+                      </div>
+                      <div>
+                      <span class="current-price">&#36;800</span> <span class="on-sale">&#36;950</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-3.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Sina Ray</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-react.jpg" class="card-img-top" alt="graphql image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">How to Easily Create a Website with React</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 3h 55m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                        </svg> Advanced
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        4.5 <span class="reviews">(1,500)</span>
+                      </div>
+                      <div>
+                        <span class="current-price">&#36;600</span> <span class="on-sale">&#36;750</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-2.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">April Noms</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card-body d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2 border-avatar">
-                <img src="./assets/avatar-8.jpg" class="nav-avatar rounded-circle" alt="">
-              <p class="m-0">Miston Wilson</p>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-python.jpg" class="card-img-top" alt="graphql image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">Python: Lorem ipsum sit.</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 2h 40m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                        </svg> Advanced
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        2.5 <span class="reviews">(1,500)</span>
+                      </div>
+                      <div class="course-description">
+                      <span class="current-price">&#36;500</span> <span class="on-sale">&#36;600</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-5.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Brooklyn Simmons</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-css.jpg" class="card-img-top" alt="graphql image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">CSS: Lorem, ipsum dolor.</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 2h 40m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                        </svg> Advanced
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        2.5 <span class="reviews">(1,500)</span>
+                      </div>
+                      <div class="course-description">
+                      <span class="current-price">&#36;500</span> <span class="on-sale">&#36;600</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-5.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Brooklyn Simmons</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-wordpress.jpg" class="card-img-top" alt="graphql image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">Wordpress: Lorem, ipsum dolor.</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 2h 40m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                        </svg> Advanced
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        2.5 <span class="reviews">(1,500)</span>
+                      </div>
+                      <div class="course-description">
+                      <span class="current-price">&#36;500</span> <span class="on-sale">&#36;600</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-5.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Brooklyn Simmons</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-angular.jpg" class="card-img-top" alt="graphql image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">Angular: Lorem, ipsum dolor.</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 2h 40m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                        </svg> Advanced
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        2.5 <span class="reviews">(1,500)</span>
+                      </div>
+                      <div class="course-description">
+                      <span class="current-price">&#36;500</span> <span class="on-sale">&#36;600</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-5.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Brooklyn Simmons</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <i class="far fa-bookmark"></i>
             </div>
           </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="card">
-            <img src="./assets/course-javascript.jpg" class="card-img-top" alt="graphql image">
-            <div class="card-body">
-              <h6>A Complete Beginner's Guide to JavaScript</h6>
-              <div class="course-description">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg> 4h 10m
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
-                  <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
-                  <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
-                </svg> Advanced
-              </div>
-              <div class="d-flex align-items-center stars course-description">
-                <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
-                  <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor;"></path>ù
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
-                  <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
-                  <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
-                  <path d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;">
-                  <path d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" style="fill: currentcolor;"></path>
-                </svg>
-                3.5 <span class="reviews"> (7,500)</span>
-              </div>
-              <div>
-              <span class="current-price">&#36;700</span> <span class="on-sale">&#36;850</span>
-              </div>
-            </div>
-            <div class="card-body d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2 border-avatar">
-                <img src="./assets/avatar-1.jpg" class="nav-avatar rounded-circle" alt="">
-              <p class="m-0">Jenny Wilson</p>
-              </div>
-              <i class="far fa-bookmark"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="card">
-            <img src="./assets/course-node.jpg" class="card-img-top" alt="graphql image">
-            <div class="card-body">
-              <h6>Beginning Node.js, Express & MongoDB Development</h6>
-              <div class="course-description">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg> 2h 00m
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
-                  <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
-                  <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
-                </svg> Intermediate
-              </div>
-              <div class="d-flex align-items-center stars course-description">
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                4.0 <span class="reviews"> (15,700)</span>
-              </div>
-              <div>
-              <span class="current-price">&#36;800</span> <span class="on-sale">&#36;950</span>
-              </div>
-            </div>
-            <div class="card-body d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2 border-avatar">
-                <img src="./assets/avatar-3.jpg" class="nav-avatar rounded-circle" alt="">
-              <p class="m-0">Sina Ray</p>
-              </div>
-              <i class="far fa-bookmark"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="card">
-            <img src="./assets/course-react.jpg" class="card-img-top" alt="graphql image">
-            <div class="card-body">
-              <h6>How to Easily Create a Website with React</h6>
-              <div class="course-description">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg> 3h 55m
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
-                  <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
-                  <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
-                </svg> Advanced
-              </div>
-              <div class="d-flex align-items-center stars course-description">
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                4.5 <span class="reviews">(1,500)</span>
-              </div>
-              <div>
-              <span class="current-price">&#36;600</span> <span class="on-sale">&#36;750</span>
-              </div>
-            </div>
-            <div class="card-body d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2 border-avatar">
-                <img src="./assets/avatar-2.jpg" class="nav-avatar rounded-circle" alt="">
-              <p class="m-0">April Noms</p>
-              </div>
-              <i class="far fa-bookmark"></i>
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselTwo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselTwo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
 
@@ -621,253 +1198,537 @@
         <div class="col-12">
           <h2 class="pt-5">Trending</h2>
         </div>
-        <div class="col-6 col-md-3">
-          <div class="card">
-            <img src="./assets/course-gatsby.jpg" class="card-img-top" alt="graphql image">
-            <div class="card-body">
-              <h6>Revolutionize How You Build the Web</h6>
-              <div class="course-description">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg> 1h 46m
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
-                  <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
-                  <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
-                </svg> Intermediate
-              </div>
-              <div class="d-flex align-items-center stars course-description">
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                2.0 <span class="reviews">(16,500)</span>
-              </div>
-              <div>
-              <span class="current-price">&#36;800</span> <span class="on-sale">&#36;850</span>
+        <div id="carouselThree" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-gatsby.jpg" class="card-img-top" alt="graphql image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">Revolutionize How You Build the Web</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 1h 46m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
+                        </svg> Intermediate
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        2.0 <span class="reviews">(16,500)</span>
+                      </div>
+                      <div>
+                      <span class="current-price">&#36;800</span> <span class="on-sale">&#36;850</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-6.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Jenny Wilson</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-html.jpg" class="card-img-top" alt="course image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">HTML Full Course - Build a Website Tutorial</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 3h 16m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#A8A3B9"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
+                        </svg> Beginner
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        3.0 <span class="reviews">(1,600)</span>
+                      </div>
+                      <div>
+                      <span class="current-price">&#36;550</span> <span class="on-sale">&#36;700</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-8.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Miston Wilson</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>               
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-node.jpg" class="card-img-top" alt="graphql image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">Beginning Node.js, Express & MongoDB Development</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 2h 00m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
+                        </svg> Intermediate
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        4.0 <span class="reviews"> (15,700)</span>
+                      </div>
+                      <div>
+                      <span class="current-price">&#36;800</span> <span class="on-sale">&#36;950</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-3.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Sina Ray</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-laravel.jpg" class="card-img-top" alt="graphql image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">Laravel: The Ultimate Beginner's Guide to Learn</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 1h 00m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#A8A3B9"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
+                        </svg> Beginner
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        4.5 <span class="reviews"> (2,500)</span>
+                      </div>
+                      <div>
+                      <span class="current-price">&#36;170</span> <span class="on-sale">&#36;220</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-7.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Sobo Rikhan</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card-body d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2 border-avatar">
-                <img src="./assets/avatar-6.jpg" class="nav-avatar rounded-circle" alt="">
-              <p class="m-0">Jenny Wilson</p>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-python.jpg" class="card-img-top" alt="graphql image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">Python: Lorem ipsum sit.</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 2h 40m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                        </svg> Advanced
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        2.5 <span class="reviews">(1,500)</span>
+                      </div>
+                      <div class="course-description">
+                      <span class="current-price">&#36;500</span> <span class="on-sale">&#36;600</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-5.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Brooklyn Simmons</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-css.jpg" class="card-img-top" alt="graphql image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">CSS: Lorem, ipsum dolor.</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 2h 40m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                        </svg> Advanced
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        2.5 <span class="reviews">(1,500)</span>
+                      </div>
+                      <div class="course-description">
+                      <span class="current-price">&#36;500</span> <span class="on-sale">&#36;600</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-5.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Brooklyn Simmons</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-wordpress.jpg" class="card-img-top" alt="graphql image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">Wordpress: Lorem, ipsum dolor.</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 2h 40m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                        </svg> Advanced
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        2.5 <span class="reviews">(1,500)</span>
+                      </div>
+                      <div class="course-description">
+                      <span class="current-price">&#36;500</span> <span class="on-sale">&#36;600</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-5.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Brooklyn Simmons</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="card">
+                    <img src="./assets/course-angular.jpg" class="card-img-top" alt="graphql image">
+                    <div class="card-body">
+                      <h6 class="h6-ellipses">Angular: Lorem, ipsum dolor.</h6>
+                      <div class="course-description">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg> 2h 40m
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                          <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                          <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                        </svg> Advanced
+                      </div>
+                      <div class="d-flex align-items-center stars course-description">
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" role="presentation"
+                            style="width: 0.875rem; height: 0.875rem;">
+                            <path
+                                d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                style="fill: currentcolor;"></path>
+                        </svg>
+                        2.5 <span class="reviews">(1,500)</span>
+                      </div>
+                      <div class="course-description">
+                      <span class="current-price">&#36;500</span> <span class="on-sale">&#36;600</span>
+                      </div>
+                    </div>
+                    <div class="card-body d-flex justify-content-between align-items-center border-avatar">
+                      <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/avatar-5.jpg" class="nav-avatar rounded-circle" alt="">
+                      <p class="m-0 avatar-name">Brooklyn Simmons</p>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12px" height="16px" class="save-btn">
+                        <path d="M336 0H48C21.5 0 0 21.5 0 48v464l192-112 192 112V48c0-26.5-21.5-48-48-48zm0 428.4l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.3 0 6 2.7 6 6V428.4z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <i class="far fa-bookmark"></i>
             </div>
           </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="card">
-            <img src="./assets/course-html.jpg" class="card-img-top" alt="graphql image">
-            <div class="card-body">
-              <h6>HTML Full Course - Build a Website Tutorial</h6>
-              <div class="course-description">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg> 3h 16m
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
-                  <rect x="7" y="5" width="2" height="9" rx="1" fill="#A8A3B9"></rect>
-                  <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
-                </svg> Beginner
-              </div>
-              <div class="d-flex align-items-center stars course-description">
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                3.0 <span class="reviews">(1,600)</span>
-              </div>
-              <div>
-              <span class="current-price">&#36;550</span> <span class="on-sale">&#36;700</span>
-              </div>
-            </div>
-            <div class="card-body d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2 border-avatar">
-                <img src="./assets/avatar-8.jpg" class="nav-avatar rounded-circle" alt="">
-              <p class="m-0">Miston Wilson</p>
-              </div>
-              <i class="far fa-bookmark"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="card">
-            <img src="./assets/course-node.jpg" class="card-img-top" alt="graphql image">
-            <div class="card-body">
-              <h6>Beginning Node.js, Express & MongoDB Development</h6>
-              <div class="course-description">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg> 2h 00m
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
-                  <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
-                  <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
-                </svg> Intermediate
-              </div>
-              <div class="d-flex align-items-center stars course-description">
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                4.0 <span class="reviews"> (15,700)</span>
-              </div>
-              <div>
-              <span class="current-price">&#36;800</span> <span class="on-sale">&#36;950</span>
-              </div>
-            </div>
-            <div class="card-body d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2 border-avatar">
-                <img src="./assets/avatar-3.jpg" class="nav-avatar rounded-circle" alt="">
-              <p class="m-0">Sina Ray</p>
-              </div>
-              <i class="far fa-bookmark"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="card">
-            <img src="./assets/course-laravel.jpg" class="card-img-top" alt="graphql image">
-            <div class="card-body">
-              <h6>Laravel: The Ultimate Beginner's Guide to Learn</h6>
-              <div class="course-description">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock mr-1">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 16 14"></polyline>
-                </svg> 1h 00m
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
-                  <rect x="7" y="5" width="2" height="9" rx="1" fill="#A8A3B9"></rect>
-                  <rect x="11" y="2" width="2" height="12" rx="1" fill="#A8A3B9"></rect>
-                </svg> Beginner
-              </div>
-              <div class="d-flex align-items-center stars course-description">
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                <svg viewBox="0 0 24 24" role="presentation"
-                    style="width: 0.875rem; height: 0.875rem;">
-                    <path
-                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                        style="fill: currentcolor;"></path>
-                </svg>
-                4.5 <span class="reviews"> (2,500)</span>
-              </div>
-              <div>
-              <span class="current-price">&#36;170</span> <span class="on-sale">&#36;220</span>
-              </div>
-            </div>
-            <div class="card-body d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2 border-avatar">
-                <img src="./assets/avatar-7.jpg" class="nav-avatar rounded-circle" alt="">
-              <p class="m-0">Sobo Rikhan</p>
-              </div>
-              <i class="far fa-bookmark"></i>
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselThree" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselThree" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </section>

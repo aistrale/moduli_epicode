@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 100px;
+    background-color: green;
+    opacity: 0;
+    animation: navbarAnim 1s linear forwards;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes navbarAnim {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.logo {
+    opacity: 0;
+    animation: logoAnim 1s ease-out forwards 1s;
+}
+
+@keyframes logoAnim {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.href {
+    color: white;
+    text-decoration: none;
+}
+
+.square {
+    background-color: rgb(219, 255, 119);
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    opacity: 0;
+    animation: LTR 3s ease-in-out forwards;
+}
+
+@keyframes LTR {
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(100vh);
+        opacity: 1;
+    }
+}
+
+/* @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(300px);
+    }
+}
