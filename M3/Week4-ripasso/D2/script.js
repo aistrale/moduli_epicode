@@ -1,12 +1,12 @@
-// gsap.to("#box", {
-//   duration: 5,
-//     opacity: 0.5,
-//     rotation: 360,
-//     scaleX: 1.5,
-//     scaleY: 1.5,
-// })
+gsap.to("#box", {
+   duration: 5,
+     opacity: 0.5,
+     rotation: 360,
+     scaleX: 1.5,
+     scaleY: 1.5,
+ })
 
-// gsap.to("#box", { rotation: 360, duration: 2, ease: "bounce.out" });
+ gsap.to("#box", { rotation: 360, duration: 2, ease: "bounce.out" });
 
 gsap.registerPlugin(TextPlugin)
 

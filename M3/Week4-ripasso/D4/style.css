@@ -1,19 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* SQUARE ANIMATIONS */
+/* .square {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    animation: leftToRight 1s linear infinite; FROM LEFT TO RIGHT
+    animation: rotate 1s linear forwards; ROTATE 360° AND TRANSLATE DX
+}
+
+@keyframes leftToRight {
+    from {
+        opacity: 0;
+        transform: translateX(0)
+    }
+    to {
+        opacity: 1;
+        transform: translateX(100vw);
+    }
+} 
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: translateX(300px)
+    }
+} */
+
+/* NAVBAR CHE COMPAIA DALL'ALTO, DA SX ENTRA IL LOGO, DA DX ENTRANO 5 LINK UNO DOPO L'ALTRO */
 .navbar {
     height: 100px;
-    background-color: green;
-    opacity: 0;
-    animation: navbarAnim 1s linear forwards;
+    background-color: #5BA5B7;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    animation: navAnimation 1s linear forwards;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    font-family: "Indie Flower", cursive;
 }
 
-@keyframes navbarAnim {
+@keyframes navAnimation {
     from {
         transform: translateY(-100px);
         opacity: 0;
@@ -24,15 +66,17 @@ body {
     }
 }
 
-.logo {
+nav img {
     opacity: 0;
-    animation: logoAnim 1s ease-out forwards 1s;
+    padding: 5px;
+    border-radius: 50%;
+    animation: navLogoAnimation 1s linear 1s forwards;
 }
 
-@keyframes logoAnim {
+@keyframes navLogoAnimation {
     from {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translate(-100px);
     }
     to {
         opacity: 1;
@@ -40,39 +84,65 @@ body {
     }
 }
 
-.href {
-    color: white;
+.nav-menu {
+    padding: 5px;
+}
+
+.nav-menu a {
+    color: #D5E5ED;
     text-decoration: none;
-}
-
-.square {
-    background-color: rgb(219, 255, 119);
-    width: 100px;
-    height: 100px;
-    margin: 25px;
     opacity: 0;
-    animation: LTR 3s ease-in-out forwards;
+    display: inline-block; /* per poter usare la proprietà transform gli elementi devono potersi muovere all'interno del loro blocco */
+    animation: linkAnimation 1s ease-in-out 2s forwards;
 }
 
-@keyframes LTR {
+.nav-menu a:nth-child(2) {
+    animation: linkAnimation 1s ease-in-out 3s forwards;
+}
+
+.nav-menu a:nth-child(3) {
+    animation: linkAnimation 1s ease-in-out 4s forwards;
+}
+
+.nav-menu a:nth-child(4) {
+    animation: linkAnimation 1s ease-in-out 5s forwards;
+}
+
+.nav-menu a:nth-child(5) {
+    animation: linkAnimation 1s ease-in-out 6s forwards;
+}
+
+@keyframes linkAnimation {
     from {
-        transform: translateX(0);
+        transform: translateX(-100px);
         opacity: 0;
     }
     to {
-        transform: translateX(100vh);
+        transform: translate(0);
         opacity: 1;
     }
 }
 
-/* @keyframes rotate {
-    0% {
-        transform: rotate(0deg);
+/* HIDE NAVBAR WHEN I SCROLL DOWN */
+.hideNavbar {
+    animation: hideNavAnimation 1s linear forwards;
+}
+
+@keyframes hideNavAnimation {
+    from {
+        top: 0;
+        opacity: 1;
     }
-    50% {
-        transform: rotate(360deg);
+    to {
+        top: -100px;
+        opacity: 0;
     }
-    100% {
-        transform: rotate(360deg) translateX(300px);
-    }
+}
+
+main {
+    height: 100vh;
+}
+
+main p {
+    font-size: 12px;
 }

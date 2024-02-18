@@ -1,11 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 12px 36px 0;
 }
 
 .nav-logo {
     color: #F1641E;
+    font-family: "Merriweather", serif;
 }
 
 .nav-menu-btn {
@@ -46,9 +54,23 @@ position: relative;
     border-radius: 50%;
     border: none;
     color: white;
-    background-color: orange;
+    background-color: #F1641E;
     width: 40px;
     height: 40px;
+}
+
+.hero {
+    background-color: #F4FFB9;
+}
+
+h2 {
+    font-family: "Merriweather", serif;
+    margin: 20px 0;
+}
+
+.hero-card {
+    background-color: transparent;
+    border: none;
 }
 
 .section-btn {
@@ -64,6 +86,72 @@ position: relative;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.product-grid {
-    padding: 2px;
+h3 {
+    margin: 20px 0;
+}
+
+.discover-more-btn {
+    border: 2px solid black;
+    background-color: transparent;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.discover-more-btn:hover {
+    background-color: rgb(226, 226, 226);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.about {
+    background-color: #FFFBD8;
+    color: #222222;
+}
+
+.about-a {
+    color: #222;
+}
+
+.help-btn {
+    border: 2px solid black;
+    background-color: transparent;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.cta-section {
+    background-color: #CCEBFF;
+}
+
+.search-icon {
+    margin-right: 8px;
+}
+
+.email-bar {
+position: relative;
+}
+
+.nav-search {
+    width: 475px;
+    width: 100%;
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 24px;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.subscribe-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: none;
+    color: #000;
+    background-color: white;
+    width: 100px;
+    height: 40px;
 }
