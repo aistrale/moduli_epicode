@@ -1,0 +1,259 @@
+.box-fade-in {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: fade-in 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* popout card */
+  .popout-card {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .popout-card .content {
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .popout-card:hover .content {
+    opacity: 1;
+  }
+  
+  .popout-card .content h2 {
+    margin-top: 0;
+  }
+  
+  .popout-card .content .btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: blueviolet;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* translate box */
+  .box-translate {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    animation: moveRightAnimation 2s ease-out infinite alternate;
+  }
+  
+  @keyframes moveRightAnimation {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(200px);
+    }
+  }
+  
+  /* animation rotate */
+  .box-rotate {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    animation: rotationAnim 2s linear infinite;
+  }
+  
+  @keyframes rotationAnim {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* translation and rotation */
+  .box-rotate-translate {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    animation: rotateAndTranslate 2s linear infinite;
+  }
+  
+  @keyframes rotateAndTranslate {
+    from {
+      transform: rotate(0deg) translateX(0);
+    }
+    to {
+      transform: rotate(360deg) translateX(70px);
+    }
+  }
+  
+  /* shake */
+  .box-shake {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    animation: shake 0.8s linear infinite;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+  
+  /* scale up down */
+  
+  .box-scale {
+    width: 100px;
+    height: 100px;
+    background-color: slategray;
+    transform-origin: center;
+    animation: scaleAnim 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes scaleAnim {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.5);
+    }
+  }
+  
+  /* bounce animation */
+  .box-bounce {
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    animation: bounce 1s ease-in-out infinite;
+  }
+  
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-80px);
+    }
+  }
+  
+  /* flip card */
+  .flip-card {
+    cursor: pointer;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card-front img {
+    height: 300px;
+    width: 300px;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  /* text animation neon */
+  
+  .neon-effect {
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    animation: discoText 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes discoText {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(38, 0, 255),
+        0 0 40px rgb(38, 0, 255), 0 0 70px rgb(38, 0, 255),
+        0 0 80px rgb(38, 0, 255), 0 0 100px rgb(38, 0, 255),
+        0 0 150px rgb(38, 0, 255);
+    }
+    to {
+      text-shadow: none;
+    }
+  }
+  
+  /* type effect */
+  
+  .text-container {
+    display: flex;
+  
+    align-items: center;
+  }
+  
+  .text-animation {
+    font-size: 50px;
+    overflow: hidden;
+    border-right: 0.15 solid red;
+    white-space: nowrap;
+    margin: 0;
+    animation: typing 3s steps(40) forwards infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
