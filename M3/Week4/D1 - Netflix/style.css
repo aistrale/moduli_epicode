@@ -25,6 +25,7 @@ body {
     color: #e5e5e5;
 }
 
+/* NAVBAR */
 .navbar-logo {
     width: 92px;
 }
@@ -41,6 +42,7 @@ body {
 .nav-dropdown-menu {
     background-color: #141414;
     border: 1px #e5e5e5 solid;
+    max-width: 90px;
 }
 
 .nav-btn {
@@ -49,6 +51,11 @@ body {
     color: #e5e5e5;
 }
 
+.navbar-toggler-icon {
+    background-color: #e5e5e5;
+}
+
+/* TV SHOWS AND GENRES */
 .genre-menu {
     background-color: #141414;
     color: #e5e5e5;
@@ -56,10 +63,11 @@ body {
 }
 
 .grid-style {
-    padding: 3px;
+    padding: 0 10px;
     border: 1px solid #e5e5e5;
 }
 
+/* MOVIES */
 .swiper {
     width: 100%;
     height: 150px;
@@ -69,26 +77,41 @@ body {
     width: 250px;
 }
 
-/* .swiper-slide {
-    width: 250px !important;
-} */
+.swiper-button-prev {
+    top: 55% !important;
+    left: -50px !important;
+    color: white;
+}
 
-  .movie-still {
-    width: 250px;
-    height: 140px;
-  }
-
-  .swiper-slide:hover {
-    /* transform: scale(1.1); */
-    z-index: 1000;
-  }
+.swiper-button-next {
+    top: 55% !important;
+    right: -50px !important;
+    color: white;
+}
 
 .card-container {
-    background-image: url("https://picsum.photos/250/140");
     width: 250px;
     height: 140px;
     border-radius: 5px;
     overflow: hidden;
+}
+
+@keyframes bigger {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.card-container:hover {
+    animation: bigger 1s ease-in forwards;
+}
+
+.movie-still {
+    width: 250px;
+    height: 140px;
 }
 
 .card-description {
@@ -105,18 +128,6 @@ body {
 .card-container:hover .card-description {
     z-index: 1000;
     transform: translateY(0);
-}
-
-.swiper-button-prev {
-    top: 55% !important;
-    left: -50px !important;
-    color: white;
-}
-
-.swiper-button-next {
-    top: 55% !important;
-    right: -50px !important;
-    color: white;
 }
 
 .container-hidden {
@@ -151,4 +162,17 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* FOOTER */
+.footer-link {
+    color: #808080;
+    text-decoration: none;
+}
+
+.footer-btn {
+    color: #808080;
+    background-color: transparent;
+    border: 2px solid #808080;
+    margin: 20px 0;
 }
