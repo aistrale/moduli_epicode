@@ -65,7 +65,7 @@ body {
     height: 150px;
   }
   
-.swiper-slid {
+.swiper-slide {
     width: 250px;
 }
 
@@ -79,6 +79,76 @@ body {
   }
 
   .swiper-slide:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     z-index: 1000;
   }
+
+.card-container {
+    background-image: url("https://picsum.photos/250/140");
+    width: 250px;
+    height: 140px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s;
+    transform: translateY(100%);
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+}
+
+.card-container:hover .card-description {
+    z-index: 1000;
+    transform: translateY(0);
+}
+
+.swiper-button-prev {
+    top: 55% !important;
+    left: -50px !important;
+    color: white;
+}
+
+.swiper-button-next {
+    top: 55% !important;
+    right: -50px !important;
+    color: white;
+}
+
+.container-hidden {
+    opacity: 0;
+}
+
+.container-enter-animation {
+    animation: container-fade-in 0.5s ease-in;
+}
+
+@keyframes container-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container-exit-animation {
+    animation: container-fade-out 0.5s ease-out;
+}
+
+@keyframes container-fade-out {
+    from {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
