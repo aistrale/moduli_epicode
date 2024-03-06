@@ -1,21 +1,60 @@
-/*
 // esercizio 1
+const exerciseOne = () => {
+    const containerOne = document.createElement("div");
+    containerOne.classList.add(".container");
+
+    const titleOne = document.createElement("h3");
+    titleOne.innerHTML = "Esercizio 1"
+
+    const instructionsOne = document.createElement("p");
+    instructionsOne.innerHTML = "Crea una funzione che controlli due numeri interi. Ritorna 'true' se uno dei due è 50 o se la somma dei due è 50.";
+
+    const solutionOne = document.createElement("p");
+    solutionOne.innerHTML = 
+
+    containerOne.appendChild(titleOne);
+    containerOne.appendChild(instructionsOne);
+    containerOne.appendChild(solutionOne);
+    document.body.appendChild(containerOne);
+}
+
 const checkNumbers = (numberOne, numberTwo) => {
     if (numberOne === 50 || numberTwo === 50 || numberOne + numberTwo === 50) {
-        console.log(true)
+        console.log(true);
     } else {
         console.log(false);
     }
+    exerciseOne();
 }
-console.log(checkNumbers(25, 25))
+console.log(checkNumbers(60, 25))
+
 
 // esercizio 2
+const exerciseTwo = () => {
+    const containerTwo = document.createElement("div");
+    containerTwo.classList.add(".container");
+
+    const titleTwo = document.createElement("h3");
+    titleTwo.innerHTML = "Esercizio 2"
+
+    const instructionsTwo = document.createElement("p");
+    instructionsTwo.innerHTML = "Crea una funzione che rimuova il carattere a una specifica posizione da una stringa. Passa la stringa e la posizione come parametri e ritorna la stringa modificata.";
+
+    const solutionTwo = document.createElement("p");
+    solutionTwo.innerHTML = 
+
+    containerTwo.appendChild(titleTwo);
+    containerTwo.appendChild(instructionsTwo);
+    containerTwo.appendChild(solutionTwo);
+    document.body.appendChild(containerTwo);
+}
 
 const deleteChar = (mySentence, position) => {
-    return mySentence.slice(0, position) + mySentence.slice(position+1);
+    exerciseTwo(mySentence.slice(0, position) + mySentence.slice(position+1));
 }
 console.log(deleteChar("Hello!", 4))
 
+/*
 // esercizio 3
 const createSentence = (string) => {
     const paragraph = document.createElement("p");
@@ -88,7 +127,7 @@ const angle = (degree) => {
     }
 }
 console.log(angle(179))
-*/
+
 
 // es 8
 const acronym = (string) => {
@@ -100,4 +139,4 @@ const acronym = (string) => {
     return result;
 }
 console.log(acronym("ciao sono marco"))
-
+*/
