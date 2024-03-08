@@ -28,7 +28,7 @@ const checkNumbers = (numberOne, numberTwo) => {
 }
 console.log(checkNumbers(60, 25))
 
-
+/*
 // esercizio 2
 const exerciseTwo = () => {
     const containerTwo = document.createElement("div");
@@ -54,7 +54,7 @@ const deleteChar = (mySentence, position) => {
 }
 console.log(deleteChar("Hello!", 4))
 
-/*
+
 // esercizio 3
 const createSentence = (string) => {
     const paragraph = document.createElement("p");
@@ -139,4 +139,30 @@ const acronym = (string) => {
     return result;
 }
 console.log(acronym("ciao sono marco"))
+
+
+const maxUsed = (string) => {
+    const lowerCaseString = string.toLowerCase();
+    let count = {};
+
+    for (const char of string) {
+        count[char] = (count[char] || 0) +1;
+    }
+    let mostUsedChar = "";
+    let maxCount = 0;
+
+    for (let char in count) {
+        if (count[char] > maxCount) {
+            mostUsedChar = char;
+            maxCount = count[char];
+        }
+    }
+    return mostUsedChar;
+}
+console.log(maxUsed("Ciao ciccio"));
+
+const anagram = (string1, string2) => {
+    let stringOneLowerCase = string1.toLowerCase();
+    let stringTwoLowerCase = string2.toLowerCase();
+}
 */
