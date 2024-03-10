@@ -73,6 +73,7 @@ figure {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    background-color: #D5B8A9;
 }
 
 .figure-text h4 {
@@ -86,34 +87,54 @@ figure {
 }
 
 footer {
-    /* height: 90px; */
+    padding: 60px 60px 0 60px;
     background-color: #333333;
     color: white;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
 }
 
-footer ul {
+.footer-first-row {
     display: flex;
+    justify-content: space-between;
+}
+
+h4,h5 {
+    margin: 0;
+    padding: 5px;
+}
+
+.help {
+    display: flex;
+    gap: 45px;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.faq ul {
     list-style: none;
-    gap: 15px;
+    padding: 0;
+    justify-content: center;
 }
 
-/* footer a {
-    padding: 3px;
+.footer-second-row {
+    display: flex;
+    justify-content: center;
 }
 
 footer a:link {
     color: white;
-  }
-
-footer a:visited {
-    color: white;
+    text-decoration: none;
 }
 
 footer a:hover {
     background-color: #D5B8A9;
     padding: 3px;
     color: white;
-} */
+}
+
+footer a:visited {
+    color: white;
+}

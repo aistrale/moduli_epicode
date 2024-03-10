@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nintendo store clone</title>
+</head>
+<body>
+    <nav>
+        <div class="navTop">
+            <div class="navLogo">
+                <img src="https://store.nintendo.it/images/logo-nintendo.svg" alt="Nintendo Logo">
+            </div>
+            <div>
+                <input type="text" placeholder="Cerca giochi" id="inputField">
+            </div>
+            <div class="navIcons">
+                <ion-icon name="person-outline"></ion-icon>
+                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon name="cart-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="navTopMenu">
+            <ul>
+                <li><a href="#">Novità</a>
+                <li><a href="#">Console</a>
+                <li><a href="#">Giochi</a>
+                <li><a href="#">Merchandising</a>
+                <li><a href="#">Mondi</a>
+            </ul>
+        </div>
+    </nav>
+    <div class="navBottomMenu">
+        <ul id="bottomMenu"></ul>
+    </div>
+
+    <div class="breadcrumb">
+        <a href="#">Home / Giochi</a>
+    </div>
+
+    <div class="main-content">
+        <aside>
+            <h3>Filtri</h3>
+            <section class="disp">
+                <h3>Disponibilità</h3>
+                <input type="checkbox" id="disp-check">
+                <label for="disp-check">Nascondi articoli esauriti</label>
+            </section>
+            <section class="price">
+                <h3>Prezzo</h3>
+                <div>
+                    <input type="checkbox" id="price-check">
+                    <label for="price-check">Fino a 10&#8364;</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="price-check">
+                    <label for="price-check">Fino a 10&#8364;</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="price-check">
+                    <label for="price-check">Fino a 10&#8364;</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="price-check">
+                    <label for="price-check">Fino a 10&#8364;</label>
+                </div>
+            </section>
+        </aside>
+        <main>
+            <div class="topInfo">
+                <p class="nResults">336 risultati</p>
+                <button>Prodotti recenti</button>
+            </div>
+            <div class="cardsContainer" id="cardsContainer">
+                <div class="card">
+                    <h3>Titolo</h3>
+                    <img src="https://picsum.photos/id/13/200" alt="" class="card-img">
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
