@@ -15,20 +15,22 @@ form.addEventListener("submit", (e)=>{
  })
 
 function required(result){
-    // const inputs = form.getElementsByTagName("input");
-    // for (let index = 0; index < inputs.length; index++) {
-    //     const element = inputs[index];
-    //     if (validateName)(element.value)
-    //     console.log("ciao");
-    // }
+/*
+    const inputs = form.getElementsByTagName("input");
+    for (let index = 0; index < inputs.length; index++) {
+        const element = inputs[index];
+        if (validateName)(element.value)
+        console.log("ciao");
+    }
 
-//     let isValid = true;
-//     qui sotto controlla che il campo "name" non sia vuoto; result.name è il valore dell'input
-//     if (!result.name || result.name.length < 2) {
-//         console.log("il nome è troppo corto");
-//         isValid =false;
-//     }
-// }
+    let isValid = true;
+    // qui sotto controlla che il campo "name" non sia vuoto; result.name è il valore dell'input
+    if (!result.name || result.name.length < 2) {
+        console.log("il nome è troppo corto");
+        isValid =false;
+    }
+}
+*/
 
 let isValid = true;
 if(validateName(result.name)){
@@ -38,18 +40,20 @@ if(validateName(result.name)){
 }
 }
 
-// function validateName(name) {
-//     return name.length >= 2;
-// }
+/*
+function validateName(name) {
+    return name.length >= 2;
+}
+*/
 
 function validateName(inputNameValue) {
     return inputNameValue.trim().length >= 5; // deve essere di almeno 5 lettere
   }
 
  function getFormData(){
-    if(name.value === " "){
+    if(name.value === " ") {
         console.log('riprova');
-    }else {
+    } else {
         nameValue=name.value
     }
 
