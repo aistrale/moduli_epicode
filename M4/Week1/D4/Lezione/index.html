@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #user-container {
+            display: flex;
+        }
+
+        #user-container>div {
+            margin-inline: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+        }
+
+        #user-container img {
+            border-radius: 500px;
+        }
+
+        #user-container h4 {
+            font-family: sans-serif;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        #user-container>div>div {
+            display: flex;
+            justify-content: space-between;
+            gap: 4em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="hello">
+        Hello world in div
+    </div> -->
+
+    <div id="user-container">
+        <div>
+            <img src="https://placehold.it/100">
+            <h4>Loading...</h4>
+            <div>
+                <span>Phone No</span>
+                <span id="phone-no"></span>
+            </div>
+            <div>
+                <span>Email</span>
+                <span id="email"></span>
+            </div>
+            <div>
+                <span>Address</span>
+                <span id="street-address"></span>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex">
+        <button style="margin-inline:auto;margin-block:1em">Click me</button>
+    </div>
+
+
+    <input type="text" id="username">
+    <!-- <button onclick="applyName()">Apply Name</button> -->
+
+    <!-- <script src="./script.js"></script> -->
+    <script src="./fetch.js"></script>
+    <!-- <script src="./promise.js"></script> -->
+</body>
+
+</html>

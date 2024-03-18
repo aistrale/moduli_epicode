@@ -7,15 +7,16 @@ const getCards = async () => {
         const response = await fetch(url);
         const data = await response.json();
         console.log(data)
-        return data;
+        return data.products;
     } catch (error) {
         console.log(error);
     }
 }
 
 const products = getCards().then(res => {
-    res.map(product => createCard(product))
+    res.map (product => createCard(product))
 })
+
 
 const createCard = (product) => {
     const card = document.createElement("div");

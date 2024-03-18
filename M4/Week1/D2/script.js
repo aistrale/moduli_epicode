@@ -1,3 +1,4 @@
+/* funzione asincrona: JS sa che deve mettere un "segnaposto" così che JS la legge, la mette in memoria e quando ha i dati ci dà la funzione */
 const getProducts = async () => {
     try {
         const response = await fetch("https://dummyjson.com/products");
@@ -8,7 +9,6 @@ const getProducts = async () => {
         console.log(error);
     }
 }
-
 getProducts()
 
 const newProduct = {
@@ -40,8 +40,8 @@ const addProducts = async () => {
             }
         });
         const data = response.json();
-        console.log(data);
-        console.log(response);
+        /* console.log(data);
+        console.log(response); */
         return response
     } catch (error) {
         console.log(error);
@@ -78,28 +78,37 @@ const editProduct = async () => {
 editProduct()
 .then(res => console.log(res))
 
-// ----------------
-/*
+const deleteProduct = async () => {
+    try {
+        const response = await fetch("https://dummyjson.com/products/1", {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+        return await response.json()
+    } catch (error) {
+        console.log(error);
+    }
+}
+deleteProduct()
+.then(res => console.log(res))
+
+/* chiamata GET con metodo vecchio
+
 fetch("https://dummyjson.com/products")
-// .then(Response =>{
-//     if (Response.ok) {
-//         console.log(Response.json());
-//         return Response.json();
-//     }
-// })
-.then(response => response.json())
-.then(data => {
-    data.products.map((product) => {
-        x(product.title, product.description)
+    .then(response => response.json())
+    .then(data => {
+        data.products.map((product) => x(product.title, product.description))
     })
-})
-.catch(error => {
-    console.log(error);
-})
+    .catch(error => {
+        console.log(error);
+    })
 
 const x = (title, description) => {
     const y = document.body
     const p = document.createElement("p")
     p.innerHTML = `<p>${title} - ${description}</p>`
     y.appendChild(p)
-} */
+}
+*/
