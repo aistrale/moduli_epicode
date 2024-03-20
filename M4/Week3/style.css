@@ -11,12 +11,8 @@
     color: rgb(22, 131, 227); 
 }
 
-.card-img {
-    width: 260px;
-    height: 370px;
-}
-
-.img {
-    max-width: 100%;
-    object-fit: contain;
+.book-cover {
+    max-height: 250px;
+    min-height: 250px;
+    object-fit: cover;
 }
