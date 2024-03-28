@@ -20,18 +20,26 @@
                 <img src="https://picsum.photos/id/275/30" alt="" class="rounded-circle">
             </div>
 
-            <a href="./backoffice.html">Backoffice</a>
-
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-success">Search</button>
           </form>
         </div>
     </nav>
 
     <div class="container">
       <div class="row" id="cardContainer">
-
+        <div class="col-12 col-md-6">
+          <form id="add-product-form">
+            <input type="text" name="name" placeholder="insert name">
+            <input type="text" name="description" placeholder="insert descr">
+            <input type="text" name="brand" placeholder="insert brand">
+            <input type="number" name="price" placeholder="insert price">
+            <input type="url" name="imageUrl" placeholder="insert link">
+            <button id="add-product-btn" class="btn btn-primary" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="col-12 col-md-6"></div>
       </div>
     </div>
 
@@ -46,6 +54,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="script.js"></script>
+
+    <script src="backoffice.js"></script>
   </body>
 </html>
