@@ -61,7 +61,7 @@ const createCard = (product) => {
     cardContainer.append(cardWrapper)
 }
 
-abstractFetch(ENDPOINT, {}).then(res.map(product => createCard(product)); /* GET */
+abstractFetch(ENDPOINT, {}).then(res => res.map(product => createCard(product))); /* GET */
 /* abstractFetch(ENDPOINT, {method: "POST", body: newProduct}).then(res => console.log(res)); /* POST */
 
 /* const getProduct = async (headers, method, body) => {
