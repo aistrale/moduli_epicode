@@ -56,7 +56,7 @@ const loadProducts = async () => {
             <div class="d-flex justify-content-center align-items-center">
                 <img src="${product.imageUrl}" alt="${product.name}" class="row-img">
                 <div>
-                    <h6 class="card-title ps-2">${product.name}</h6>
+                    <a href="product.html?id=${product._id}" class="card-link"><h6 class="card-title ps-2">${product.name}</h6></a>
                     <p class="card-text ps-2">${product.brand} - $ ${product.price}</p>
                 </div>
             </div>
