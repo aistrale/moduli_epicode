@@ -29,30 +29,30 @@ const abstractFetch = async (url, options = {}) => {
 
 const createCard = (product) => {
     const cardWrapper = document.createElement("div");
-    cardWrapper.setAttribute("class", "col-12 col-md-4 col-lg-3 px-md-0 card");
+    cardWrapper.setAttribute("class", "col-12 col-md-4 col-lg-3 mb-2 mb-0 mx-1 card");
     
     const productLink = document.createElement("a");
     productLink.setAttribute("href", `product.html?id=${product._id}`);
     productLink.setAttribute("class", "card-link");
 
     const img = document.createElement("img");
-    img.setAttribute("class", "card-img-top px-md-1 py-md-1");
+    img.setAttribute("class", "card-img-top px-1 py-1");
     img.setAttribute("src", product.imageUrl);
 
     const cardBody = document.createElement("div");
     cardBody.setAttribute("class", "card-body");
 
     const cardTitle = document.createElement("h6");
-    cardTitle.setAttribute("class", "card-title m-0");
+    cardTitle.setAttribute("class", "card-title");
     cardTitle.textContent = product.name;
 
     const cardDescription = document.createElement("p");
-    cardDescription.setAttribute("class", "card-text m-0");
+    cardDescription.setAttribute("class", "card-text");
     cardDescription.textContent = product.description;
 
     const cardPrice = document.createElement("p");
     cardPrice.setAttribute("class", "card-text");
-    cardPrice.textContent = `Price: $ ${product.price}`;
+    cardPrice.textContent = `$ ${product.price}`;
 
     cardBody.append(cardTitle, cardDescription, cardPrice);
     productLink.append(img, cardBody);
