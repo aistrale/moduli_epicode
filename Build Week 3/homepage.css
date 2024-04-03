@@ -12,9 +12,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-aside {
-    width: 40%;
+.content,
+.main-content {
+    min-height: 100vh;
 }
+
 
 .top-aside,
 .sub-aside {
@@ -32,3 +34,13 @@ aside {
 .aside-card-text {
     font-size: 12px;
 }
+
+.main-content {
+    background-color: var(--section-bg-color);
+}
+
+.playlist-card h6,p {
+    margin: 0;
+    font-size: small;
+}
+
