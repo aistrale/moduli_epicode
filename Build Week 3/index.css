@@ -12,11 +12,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.content,
+.sidebar-content,
 .main-content {
     min-height: 100vh;
 }
-
 
 .top-aside,
 .sub-aside {
@@ -35,6 +34,17 @@ body {
     font-size: 12px;
 }
 
+.link-text {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#searchField,
+#searchBtn {
+    border-radius: 30px;
+    border: none;
+}
+
 .main-content {
     background-color: var(--section-bg-color);
 }
@@ -44,3 +54,6 @@ body {
     font-size: small;
 }
 
+.footer {
+    background-color: var(--background-color);
+}
